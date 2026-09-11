@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>nelim.pomeranian.adogsaidpatch</packageId>
+  <name>Pomeranian - A Dog Said Patch 1.6</name>
+  <author>akairo - 1.6 rewrite: nelim</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew</url>
+  <modDependencies>
+    <li>
+      <packageId>akairo.Pomeranian</packageId>
+      <displayName>Pomeranian Continued</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3682979759</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>SamBucher.ADogSaidAnimalProsthetics2</packageId>
+      <displayName>A Dog Said... Animal Prosthetics 2</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3238353862</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadBefore>
+    <li>SamBucher.ADogSaidAnimalProsthetics2</li>
+  </loadBefore>
+  <incompatibleWith>
+    <li>akairo.Pomeranian.ADogSaidPatch</li>
+  </incompatibleWith>
+  <description>Lets a pomeranian have the animal surgeries of A Dog Said... Animal Prosthetics 2: old wounds treated, peg legs, simple prosthetics and organs, bionics and a power claw. Four XML operations became one.
+
+Needs Pomeranian Continued and A Dog Said... Animal Prosthetics 2. Nothing else - no DLC, no assembly, no def of its own.
+
+MUST LOAD BEFORE A DOG SAID 2. This is declared in the mod's metadata, so a sorter will place it, but it is worth knowing why: A Dog Said 2 copies its three animal categories onto the real surgery recipes with its own last patch. A mod that adds an animal to those categories afterwards is writing to a list nothing reads any more.
+
+I am not the author of the original. akairo wrote the Pomeranian mod and this patch for it; all I did was rewrite the patch for the A Dog Said that exists today. Credit goes to akairo; mistakes in the rewrite are mine.
+
+Original patch: https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999 - declares 1.0 and 1.1 and nothing further.
+
+WHY IT NEEDED REWRITING
+
+The original had two faults, and either one alone was enough to make it useless.
+
+Three of its four operations used the predicate [defName = "InstallPegLegAnimal" or "OldWoundsAnimalBase"]. That is not the test it looks like. In XPath, "or" converts each operand to a boolean, and a non-empty string literal is true - so the predicate reduces to "or true" and matches every RecipeDef in the document. The operation adds the pomeranian to the recipeUsers of every recipe in the game and in every mod loaded, which puts every one of those recipes on the animal's operations tab.
+
+And the names it targeted are the old ones. A Dog Said... Animal Prosthetics 2 replaced the per-recipe lists with three abstract categories, ADS_Cat1 to ADS_Cat3; of the five recipes this patch named, OldWoundsAnimalBase no longer exists at all. Listing recipes one by one is not how an animal is enrolled any more.
+
+This version is one operation. It adds the pomeranian to the three categories, with every branch of the predicate compared properly, wrapped in a PatchOperationConditional that looks for one of those categories - so without A Dog Said 2 it does nothing and says nothing. The pomeranian goes in all three, which is where vanilla's husky, labrador and yorkshire terrier are: A Dog Said 2 sorts trainable pets into its top category.
+
+A NOTE ON POMERANIAN CONTINUED
+
+Pomeranian Continued ships a copy of akairo's original patch inside itself, in Patch-ADogSaid/, byte for byte identical to the dead standalone mod, and its LoadFolders.xml loads that folder whenever A Dog Said 2 is active. So the always-true predicate above is live today for anyone running both, and there is nothing a separate mod can do about it: Pomeranian Continued asks to load after A Dog Said 2, so a patch that cleaned up after it could not also reach the categories in time.
+
+The fix belongs upstream. This mod does not conflict with it - the surgeries work - but the stray recipes on the animal's operations tab come from Pomeranian Continued, not from here.
+
+CREDIT AND REMOVAL
+
+akairo declared no licence: no file in the mod, nothing in its About.xml, no linked repository, and nothing in the body of the description on its Steam page. It is republished here under the usual convention for abandoned mods - full credit, a link to the original, and removal on request. If akairo would rather this rewrite did not exist, say so and it comes down: no argument, no delay.
+
+The original standalone patch is declared incompatible above. Run one or the other.
+
+Patch mod: it adds no def and creates no thing. Removing it mid-save costs nothing beyond the surgeries it enabled.
+
+Source, changelog and attribution: https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
+
+The rewrite was done with the help of an AI assistant (Claude, by Anthropic), under human direction and in-game testing. Thanks to akairo for the dog and for the original patch.
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+</ModMetaData>

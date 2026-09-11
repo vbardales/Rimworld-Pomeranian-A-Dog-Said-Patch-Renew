@@ -1,0 +1,58 @@
+MIT License
+
+Copyright (c) 2026 nelim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+---------------------------------------------------------------------------
+SCOPE OF THE ABOVE
+
+The MIT licence above covers only what the 1.6 rewrite produced:
+
+  - Patches/ADSPatch.xml, which is new work rather than a corrected copy. The
+    original's four operations targeted recipe names A Dog Said replaced in
+    2023, through a predicate that in fact matched every recipe in the game;
+    none of that survives here. What ships is one operation against A Dog
+    Said 2's three animal categories.
+  - the About.xml metadata, including the load-order declaration
+  - the packaging and the documentation
+
+IT DOES NOT COVER THE ORIGINAL MOD, and it does not cover the mods this one
+patches.
+
+akairo's Pomeranian - A Dog Said Patch is the mod this replaces:
+
+  https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999
+
+akairo never declared a licence for it, so none is granted here and none can
+be. It is superseded here under the usual practice for abandoned mods -
+explicit credit, a link to the original, and removal on request.
+About/Preview.png is akairo's own, reused as it stands.
+
+If akairo asks for this to be taken down, it comes down. Immediately, and
+without discussion.
+
+Nothing belonging to the two mods this one depends on is redistributed here.
+aka_Pomeranian is akairo's, and is defined by Pomeranian Continued
+(3682979759, maintained by Bernau31). ADS_Cat1, ADS_Cat2 and ADS_Cat3 are
+SamBucher's, and are defined by A Dog Said... Animal Prosthetics 2
+(3238353862). This mod only names them.
+
+ATTRIBUTION.md records what was taken and what was changed.
