@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>nelim.pomeranian.adogsaidpatch</packageId>
-  <name>Pomeranian - A Dog Said Patch 1.6 (unofficial)</name>
-  <author>akairo - 1.6 rewrite: nelim</author>
+  <name>Pomeranian - A Dog Said Patch Renew (unofficial)</name>
+  <author>akairo - 1.6 adapted by Nelim</author>
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>

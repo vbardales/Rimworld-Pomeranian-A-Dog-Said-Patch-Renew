@@ -6,7 +6,7 @@ A 1.6 rewrite of **Pomeranian - A Dog Said Patch**, by **akairo**
 ## Standalone decision — 2026-09-13
 
 Public / silent under the project workflow, with the title
-**Pomeranian - A Dog Said Patch 1.6 (unofficial)**. The Steam source page
+**Pomeranian - A Dog Said Patch Renew (unofficial)**. The Steam source page
 https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999 was read again:
 its version tags are 1.0 and 1.1, matching the installed original About.xml.
 The description says the patch has been built in since 1.2. Neither the description

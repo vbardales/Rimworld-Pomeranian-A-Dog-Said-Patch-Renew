@@ -1,9 +1,9 @@
-# Pomeranian - A Dog Said Patch 1.6 (unofficial)
+# Pomeranian - A Dog Said Patch Renew (unofficial)
 
 UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Rewrite of **akairo's Pomeranian - A Dog Said Patch** for RimWorld 1.6.
+Rewrite of **akairo's Pomeranian - A Dog Said Patch** for the latest RimWorld version.
 
 **I am not the author of the original.** akairo wrote the Pomeranian mod and this patch for it —
 all I did was rewrite the patch against the A Dog Said that exists today. Credit goes to akairo;

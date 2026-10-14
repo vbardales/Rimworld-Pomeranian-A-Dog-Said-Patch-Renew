@@ -3,7 +3,7 @@ localization: not_applicable
 translation_en: not_applicable
 translation_fr: not_applicable
 settings_audit: not_applicable
-mod:          Pomeranian - A Dog Said Patch 1.6 (unofficial)
+mod:          Pomeranian - A Dog Said Patch Renew (unofficial)
 packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
@@ -28,7 +28,7 @@ updated:      2026-10-14
 protocols_read_sha: 583ce1259235b54ebacca29e1116689d1d24e589
 ---
 
-# Pomeranian - A Dog Said Patch 1.6 — status
+# Pomeranian - A Dog Said Patch Renew (unofficial), status
 
 ## Workflow audit, 2026-10-14
 
