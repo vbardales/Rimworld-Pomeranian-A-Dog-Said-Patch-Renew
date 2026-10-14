@@ -37,3 +37,7 @@ PROMPT_*.md
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Local generation intermediates; approved assets belong in Art/ or Mod/About/.
+/output/
+/.firecrawl/

@@ -2,6 +2,14 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased] — 2026-09-13
+
+- Established a standalone checkout while preserving the existing GitHub history.
+- Added the public unofficial title suffix and explicit consent/removal notice.
+- Added the final source-code link to the English About description.
+- Clarified the historical preview's excluded licence scope and pending game validation.
+- No patch behavior changed.
+
 ## [1.0.0] — 2026-09-06
 
 First release. Rewrite of akairo's **Pomeranian - A Dog Said Patch** for RimWorld 1.6.

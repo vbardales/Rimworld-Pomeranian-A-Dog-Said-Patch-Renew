@@ -3,7 +3,30 @@
 A 1.6 rewrite of **Pomeranian - A Dog Said Patch**, by **akairo**
 ([2020237999](https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999)).
 
-## Status: public
+## Standalone decision — 2026-09-13
+
+Public / silent under the project workflow, with the title
+**Pomeranian - A Dog Said Patch 1.6 (unofficial)**. The Steam source page
+https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999 was read again:
+its version tags are 1.0 and 1.1, matching the installed original About.xml.
+The description says the patch has been built in since 1.2. Neither the description
+nor either of its two displayed comments grants reuse permission or expressly
+prohibits it. The installed original has no licence file or repository link.
+This supports the workflow classification; it is not author consent or a grant
+of rights. Existing author credits and the removal commitment remain mandatory.
+
+The original Preview was removed from the working tree before this migration.
+References below to that image describe the historical package, not the current
+payload. It remains excluded from MIT, including in preserved Git history.
+New local artwork is separate work in progress; this migration does not establish
+its authorship, licence or visual approval. No artwork was published by this step.
+
+The standalone repository is
+https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew, verified
+public on 2026-09-13. The existing pushed history is preserved. The local checkout
+is C:/Users/nelim/Documents/RimWorldMods/PomeranianADogSaidPatch.
+
+## Historical status: public
 
 The source mod is **dead** — it declares 1.0 and 1.1 and nothing further — and **no licence is
 declared anywhere**, checked at the four places one could be: no `LICENSE` file in the mod, no
@@ -65,7 +88,8 @@ counting, which needs no game launch:
 | Core `Recipes_Surgery_Misc.xml` | 4 | 4 | 0 |
 | ADS 2 `Animal_Categories.xml` | 3 | 3 | 0 |
 
-This is the same defect as the one found in [Dalmatians](../Dalmatians/), and the two mods now
+This is the same defect as the one found in
+[Dalmatians Renew](https://github.com/vbardales/Rimworld-Dalmatians-Renew), and the two mods now
 carry the same corrected form. The fix is to repeat the test on every branch:
 `[@Name="A" or @Name="B"]`.
 

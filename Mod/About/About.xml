@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>nelim.pomeranian.adogsaidpatch</packageId>
-  <name>Pomeranian - A Dog Said Patch 1.6</name>
+  <name>Pomeranian - A Dog Said Patch 1.6 (unofficial)</name>
   <author>akairo - 1.6 rewrite: nelim</author>
   <supportedVersions>
     <li>1.6</li>
@@ -25,7 +25,9 @@
   <incompatibleWith>
     <li>akairo.Pomeranian.ADogSaidPatch</li>
   </incompatibleWith>
-  <description>Lets a pomeranian have the animal surgeries of A Dog Said... Animal Prosthetics 2: old wounds treated, peg legs, simple prosthetics and organs, bionics and a power claw. Four XML operations became one.
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Lets a pomeranian have the animal surgeries of A Dog Said... Animal Prosthetics 2: old wounds treated, peg legs, simple prosthetics and organs, bionics and a power claw. Four XML operations became one.
 
 Needs Pomeranian Continued and A Dog Said... Animal Prosthetics 2. Nothing else - no DLC, no assembly, no def of its own.
 
@@ -63,5 +65,7 @@ Source, changelog and attribution: https://github.com/vbardales/Rimworld-Pomeran
 
 The rewrite was done with the help of an AI assistant (Claude, by Anthropic), under human direction and in-game testing. Thanks to akairo for the dog and for the original patch.
 
-If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+[url=https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>

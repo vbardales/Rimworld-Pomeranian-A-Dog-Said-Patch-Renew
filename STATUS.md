@@ -1,0 +1,203 @@
+---
+localization: not_applicable
+translation_en: not_applicable
+translation_fr: not_applicable
+settings_audit: not_applicable
+mod:          Pomeranian - A Dog Said Patch 1.6 (unofficial)
+packageId:    nelim.pomeranian.adogsaidpatch
+repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
+visibility:   public
+detached:     no
+workflow_stage: setupRepo
+licence:      silent
+licence_at:   four places, the About and the Steam page among them
+upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
+dependencies: declared
+showcase:     missing
+tested_on:
+workshop:
+remaining:
+  - unverified: first push of the standalone repository (commit 1 and 2 of setupRepo not yet pushed)
+  - defect: installed Pomeranian Continued still includes the broad upstream recipe patch
+  - unverified: current GitHub visibility and remote content equivalence
+  - unverified: current upstream permission and source-page review beyond installed files
+  - unverified: full patch integration, including optional XML Extensions branch
+  - feature: executable regression suite and structured functional scenarios are not present
+  - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
+updated:      2026-10-14
+protocols_read_sha: 583ce1259235b54ebacca29e1116689d1d24e589
+---
+
+# Pomeranian - A Dog Said Patch 1.6 — status
+
+## Workflow audit, 2026-10-14
+
+Update, same day: repository reattached (`git init` + `reset origin/main`, old gitlink kept as `../.git-gitlink-PomeranianADogSaid2.bak`), original Preview.png removed (198b081), six `(2)` duplicates deleted (stale pre-2026-09-13 copies), `Mod/ATTRIBUTION.md` and `Mod/LICENSE` resynced, `About.xml` given `(unofficial)`, the `UNOFFICIAL` paragraph and the final `Source code on GitHub` line, `upstream_mod_remotes: N/A` added. The defects listed below under 1.d to 1.h are fixed by this update.
+
+Previous status: `stage: dansMonoRepo`, no `workflow_stage` (audit of 2026-09-13).
+Retained: `workflow_stage: setupRepo`. The first transition (setupRepo -> makeSources) fails on 1.f.
+
+Checkout: `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2PatchRenew`, distributed folder `Mod/`.
+Revision: no local revision readable (broken gitlink). Remote `main` = `8fdf01517bad114d6a188119866ea85bef14da3c` (`git ls-remote`, 2026-10-14).
+Local modifications: not measurable without a repository. Only `STATUS.md` was edited. No game launch, build, image generation, commit or publication.
+Protocols read this session: `AUDIT.md`, `PUBLISHING.md`, `STYLE_RIMWORLD.md`, `MOD_SETTINGS.md`, `TRANSLATIONS.md`, `AGENTS.md`; `Mark-ProtocolsRead.ps1` run (protocols HEAD 583ce12).
+
+| Step | Result |
+| --- | --- |
+| 1.a Duplicate | `Search-Workshop.sh` not run: unverified. |
+| 1.b Source, licence, visibility | `silent`, `public`, upstream 2020237999. Carried from 2026-09-13, not refreshed. |
+| 1.c Names | packageId, repo and folder consistent. |
+| 1.d Status mentions | Defect: `About.xml` name is `Pomeranian - A Dog Said Patch 1.6`, no ` (unofficial)`, description has no `UNOFFICIAL` paragraph. |
+| 1.e GitHub repository | Exists, `main` present. Visibility not checked. |
+| 1.f Local repository | Defect: `.git` gitlink targets a missing path; `git status` fails here. |
+| 1.g Initial docs | Present. Defects: six `(2)` duplicates; `Mod/ATTRIBUTION.md` and `Mod/LICENSE` differ from root. |
+| 1.h `STATUS.md` | `workflow_stage` added, `stage` and `session` removed. `upstream_mod_remotes` missing. |
+| 1.i, 1.k | Not established. |
+| 1.j `Check-Status.ps1` | Before edit: 1 ERROR (`workflow_stage missing`), 2 WARN. Rerun below. |
+
+Independent checks kept: `ADSPatch.xml` reread, one guarded operation on `ADS_Cat1..3`, all predicate branches use `@Name=`, no `MayRequire` on an operation, consistent with `About.xml` dependencies and `loadBefore`. `ModIcon-source.png`, `ModIcon.ico`, `Mod/About/ModIcon.png` (26.3 KB) and `Mod/About/Preview.png` (10.9 KB) are present; Preview not inspected visually. Localization and settings fields stay `not_applicable` (no assembly, no Keyed text, no settings), not re-justified against current protocols.
+
+Unverified, not defects: in-game behaviour, EN/FR, logs, tests (`writeTests` not reached), current Steam page and permission, optional XML Extensions branch.
+
+Next transition: (1) attach a real repository by cloning the remote and keeping the working files (needs Virginie's go); (2) resolve the `(2)` duplicates and the `Mod/` vs root copies; (3) apply 1.d to `About.xml` and the README title; (4) add `upstream_mod_remotes`, get `Check-Status.ps1` without ERROR, run `Mark-ProtocolsRead.ps1`, commit and push.
+
+## Workflow audit, 2026-09-13 (replaced on 2026-10-14)
+
+This section supersedes the historical sweep below without erasing its record.
+Previous stage was empty (not a validated preview stage); retained stage is
+`dansMonoRepo`, literally the first state of the requested nine-transition workflow.
+No legacy code mapping is used. Later independent checks do not promote the cumulative stage.
+
+Audited checkout: `C:\Users\nelim\Documents\rimworld\PomeranianADogSaidPatch`.
+Distributed folder: its `Mod/` directory. `git rev-parse --show-toplevel` returns
+`C:/Users/nelim/Documents/rimworld`; no standalone `.git` exists here, and no matching
+checkout was found in `C:\Users\nelim\Documents\RimWorldMods`.
+Monorepo HEAD: `75c3000e1833d325cc7626a402981e4aa881d47a`.
+At audit start, STATUS.md already had local additions of three unchecked translation fields.
+During the audit, `Mod/About/Preview.png` was deleted outside this audit's actions;
+the deletion was rechecked and preserved. At final verification, an untracked external
+`output/imagegen/pomeranian-a-dog-said-patch-v1.png` (1,266,414 bytes) also appeared.
+It is outside Mod/About, was not visually audited and does not validate the delivered Preview.
+Only STATUS.md was edited by this audit.
+No game launch, build, image generation, development, commit or publication was performed.
+
+Protocols read: parent `PUBLISHING.md`, `STYLE_RIMWORLD.md`, `MOD_SETTINGS.md`,
+`TRANSLATIONS.md`, and `AGENTS.md`. The supplied prompt overrides the older requirement
+for runtime settings tests before options when settings are not applicable.
+
+| Transition | Result and evidence |
+| --- | --- |
+| dansMonoRepo -> horsMonoRepo | Blocked: checkout is not autonomous. GitHub existence and a pushed HEAD were verified by `git ls-remote https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew.git HEAD`: `8fdf01517bad114d6a188119866ea85bef14da3c`. Initial sandbox network failure was followed by a successful read-only retry. Visibility and content equivalence were not checked. Absence of a monorepo remote is not a defect. |
+| horsMonoRepo -> ModIcon generated | ModIcon absent. Build is not applicable: only one XML patch, no source project or assembly. Full development completion cannot be certified from the limited checks below. |
+| ModIcon generated -> Preview generated | Preview absent at completion. Earlier direct inspection is retained below, not counted as a current delivered artifact. |
+| Preview generated -> preOptions | English description exists, but the final formatted GitHub link is absent (a raw URL occurs earlier). Public `silent` title lacks `(unofficial)` and the prescribed opening notice in About/README; STATUS title mirrors the actual unchanged metadata. No current preview composition can pass. |
+| preOptions -> options | Independently passed as justified not_applicable; see Settings audit. |
+| options -> l10n | Independently passed as justified not_applicable; see Translation audit. |
+| l10n -> preTest | Both mandatory dependency IDs and 1.6 support verified against installed About files, animal and category targets verified. Patch loadBefore ADS2 is consistent with category copying; no contradictory loadAfter Pomeranian is added. Installed dependency defect and optional branch remain separately recorded below. |
+| preTest -> done | Not established: limited XML/XPath audit checks passed, but no stored executable test suite or structured functional scenarios exist. Full merged patch behavior is not tested. C# compilation tests are not applicable. |
+| done -> tested | Non-verified: no in-game execution, logs or FR/EN interface review, new game or existing save validation. About's historical claim of human in-game testing is not evidence of a passing run for these files. |
+
+### Packaging and rights evidence
+
+README, ATTRIBUTION, LICENSE and CHANGELOG are present in English. Root and Mod copies
+of LICENSE and ATTRIBUTION have equal SHA-256 hashes. MIT is explicitly limited to the
+rewrite and excludes akairo's original and dependency content; no new third-party licence
+is inferred. The existing `public` / `silent` decision is preserved, not freshly certified:
+installed original item 2020237999 declares only 1.0/1.1, consistent with the workflow's
+abandonment criterion. Current Steam description/comments and permissions were not refreshed.
+Attribution and removal commitments exist. Folder, repository and packageId identify the
+same patch; literal equality is not required. About has a `name`, not a packageName field.
+
+### Settings audit
+
+Inventory: one PatchOperationConditional wrapping PatchOperationAdd, adding only
+`aka_Pomeranian` to existing ADS category recipeUsers. No configurable policy or numeric
+player input is introduced; this is a fixed compatibility enrollment. Enabling the mod
+controls its presence. ADS2's own settings remain owned by that dependency.
+Full file inventory and XML inspection found no settings class, assembly, settings Def,
+empty page, MainButtonDef or shortcut. Thus settings_audit is not_applicable.
+Defaults, input boundaries, persistence, shared routes and RIMMSQOL integration tests are
+not applicable to this mod; no integration is claimed as tested. Effects apply on mod loading.
+
+### Translation audit
+
+The only payload is an internal defName reference in recipeUsers. No owned label,
+description, message, generated sentence, key, parameter or injected text is added or changed.
+No additional load folders, C# or language resources exist. Existing surgery and animal
+texts remain dependency-owned. About and documentation are metadata outside this gate.
+Consequently localization and EN/FR coverage are not_applicable; DefInjected path and
+parameter checks have zero applicable entries. This is not an in-game translation pass.
+
+### Executed technical checks
+
+PowerShell/System.Xml parsed both distributed XML files successfully.
+Loaded installed ADS2 `1.6/Defs/AnimalCategories/Animal_Categories.xml`, appended a control
+RecipeDef with Human recipeUsers, selected the exact delivered patch XPath, and asserted
+three matching category lists. Imported `match/value/li` into each and asserted exactly
+three aka_Pomeranian entries and unchanged control: PASS. Against a document with only the
+control recipe, the guard selected nothing: PASS. These are XML behavior checks, not an
+execution of Verse.PatchOperation or its absent-branch return/log behavior.
+The first test harness attempt failed because PowerShell unwrapped `.li` to a string;
+rerun using `SelectSingleNode('match/value/li')` passed. No mod change was needed.
+
+Installed dependencies were read under
+`C:\Program Files (x86)\Steam\steamapps\workshop\content\294100`:
+3682979759 (Pomeranian Continued) and 3238353862 (ADS2, modVersion 1.3.7).
+Their About files, LoadFolders, animal Def, category Def and ADS2 final category-copy patch
+confirm the referenced identifiers and normal copy order. XML Extensions is an optional
+ADS2 branch, not an extra mandatory dependency of this XML-only patch; its full behavior
+was not exercised. No universal integration pass is claimed.
+
+The upstream defect is currently reproduced at XML level: Pomeranian Continued's first
+Patch-ADogSaid XPath selected 4/4 recipes, including the unrelated control. Its 1.6
+LoadFolders activates this patch with ADS2, and its About declares loadAfter ADS2.
+This establishes the overbroad selection in the installed dependency, not an observed
+in-game operations-tab result. The documentation's historical warning is retained.
+
+Audited SHA-256 fingerprints (unchanged runtime XML):
+
+- Mod/About/About.xml: `542CA9CF11E76570E05BEF8D0CAB04914214FA64F93938A28060E23E16206FCE`
+- Mod/Patches/ADSPatch.xml: `F480EB80A18FA0CD4B3FE7AE849ED8B46818D2FB59BC18C836BF01AE1DEB3FCB`
+
+### Historical visual inspection during this audit
+
+Before its external deletion, Preview was a valid PNG, 640 x 360, 11,156 bytes,
+SHA-256 `5B3ED9728BAF5CBCDE6E3124047FF46ED6B14AD58C766075194D3BBD68B9CDE7`.
+Directly viewed: yellow background, large pixel-art dog portrait, small dogs and orange/brown
+title. It was under 1 MB but not the prescribed 896 x 504, and was an upstream portrait
+composition rather than the prescribed high-oblique scene; no current version badge or
+workflow overlay was present. No missing historical generation report or unrecorded camera
+comparison was used as a blocker. These findings concern the now-removed file only.
+
+### Next transition and optional notes
+
+To reach horsMonoRepo: establish the autonomous checkout outside the monorepo with its
+GitHub remote, verify its existing pushed content and visibility, and resolve the mandatory
+rights/naming documentation checks above. Creating another GitHub repository is not required:
+the declared repository already responds. Later image and testing work does not belong to
+this immediate transition. This audit does not authorize carrying out those development steps.
+No additional optional recommendation is needed for the immediate gate.
+
+## Historical sweep — 2026-09-12
+
+Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
+root, never inside `Mod/`, so Steam never receives it.
+
+The fields above were read off the disk on 2026-09-12. Four cannot be, and wait for whoever
+holds this mod:
+
+- **`stage`** — one of `port`, `showcase`, `preTest`, `done`, `tested`, `published`. Filled in
+  from the session group where one exists; confirm it.
+- **`tested_on`** — the date of the last run in game. Empty means never.
+- **`dependencies`** — `declared` when every mod this one needs is named in the About's
+  `modDependencies`, `to check` when a non-vanilla `loadAfter` suggests a dependency that is not
+  declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
+  2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
+  the class it injects belongs to a mod that was not declared and not loaded.
+- **`remaining`** — what is left, in three kinds: `feature` for something missing from a first
+  release, `defect` for a known fault left unfixed, `unverified` for what could not be checked.
+  The line already there is true of nearly the whole repository; replace it once it stops being.
+
+`licence` vocabulary: `open` an explicit licence, `silent` no licence and a dead source,
+`alive` no licence but a living source, `forbidden` a written refusal, `original` owing nothing
+to anyone — not a name, not an idea traceable to one mod, not a value derived from its assets.
