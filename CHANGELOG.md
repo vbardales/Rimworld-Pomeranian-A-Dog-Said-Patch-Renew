@@ -57,7 +57,7 @@ latest RimWorld version.
 
 ### Added
 
-- `<loadBefore>SamBucher.ADogSaidAnimalProsthetics2</loadBefore>`, which the original had no need
+- `<forceLoadBefore>SamBucher.ADogSaidAnimalProsthetics2</forceLoadBefore>`, which the original had no need
   of and this rewrite does. The `ADS_Cat` defs are abstract and nothing inherits from them; A Dog
   Said 2's own last patch, `z_Category_Patches.xml`, copies their `recipeUsers` onto the real
   surgery bases with `PatchOperationAddOrMergeCopy`, taking each list as it stands at that moment.

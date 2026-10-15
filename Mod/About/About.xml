@@ -19,9 +19,9 @@
       <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3238353862</steamWorkshopUrl>
     </li>
   </modDependencies>
-  <loadBefore>
+  <forceLoadBefore>
     <li>SamBucher.ADogSaidAnimalProsthetics2</li>
-  </loadBefore>
+  </forceLoadBefore>
   <incompatibleWith>
     <li>akairo.Pomeranian.ADogSaidPatch</li>
   </incompatibleWith>
