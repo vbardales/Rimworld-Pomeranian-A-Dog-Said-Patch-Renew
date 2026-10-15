@@ -18,6 +18,7 @@ tested_on:
 workshop:
 remaining:
   - defect: installed Pomeranian Continued still includes the broad upstream recipe patch
+  - defect: load-order cycle (4.d): modDependencies akairo.Pomeranian forces Pomeranian before this patch, but Pomeranian loadAfter ADS2 and this patch loadBefore ADS2 needs patch < ADS2 < Pomeranian; sort-load-order.py drops our loadBefore and places the patch after ADS2 (patch would not reach the categories in a Pickle staging); decision pending
   - unverified: no duplicate search run (1.a, Search-Workshop.sh)
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
@@ -32,6 +33,15 @@ protocols_read_sha: e733386f133716f60efbad53c37602935eda7050
 ## Workflow audit, 2026-10-15
 
 Stage now `declareDependencies[1.0.0]` (3.a to 3.d met: no `feature` entry for this version, no build for an XML-only mod, `[Unreleased]` in `CHANGELOG.md` up to date).
+
+Dependency audit (4.a to 4.g), 2026-10-15, read from the installed Workshop copies:
+- 4.a Used: `aka_Pomeranian` (Pomeranian Continued, `akairo.Pomeranian`, 3682979759, supports 1.0 to 1.6) and `ADS_Cat1` to `ADS_Cat3` (A Dog Said... Animal Prosthetics 2, `SamBucher.ADogSaidAnimalProsthetics2`, 3238353862, supports 1.4 to 1.6). Both declared with the right id and Workshop id.
+- 4.b Pomeranian Continued is technically required (without it the patch writes an unknown def into `recipeUsers`). ADS2 is not technically required (the operation is guarded and does nothing without it); kept as `modDependencies` because the mod has no purpose without it. Owner's call. `loadBefore` ADS2 is required (its last patch copies the categories); `incompatibleWith` the original patch is consistent. No `MayRequire` on an operation.
+- 4.c No DLC, no `LoadFolders.xml` in this mod. `supportedVersions` 1.6, supported by both dependencies.
+- 4.d DEFECT: cycle, see `remaining`. `sort-load-order.py` run on the three `About.xml` (also with ADS2 removed from `modDependencies`, and with `forceLoadBefore`): same cycle, same result, the patch ends after ADS2. Cause: `akairo.Pomeranian` is a `modDependencies` entry (sorted first) while Pomeranian declares `loadAfter` ADS2. Fix options need the owner's decision (About.xml dependency declarations change, 8.m reopens the review).
+- 4.e The patch is guarded by `PatchOperationConditional` on `ADS_Cat1`, silent without ADS2.
+- 4.f Not applicable: this mod adds no animal; it is itself the ADS2 integration of another mod's animal.
+- 4.h Not passed: stage stays `declareDependencies[1.0.0]` until 4.d is resolved.
 
 Full pass from `setupRepo`. Moved to `workflow_stage: code[1.0.0]` once 2.a to 2.g were met (target version 1.0.0: nothing was ever released, no tag, no Workshop item; the former `[1.0.0]` changelog entry was merged into `[Unreleased]`). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
 
