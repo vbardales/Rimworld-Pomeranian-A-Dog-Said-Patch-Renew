@@ -8,7 +8,7 @@ packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
 detached:     no
-workflow_stage: setupRepo
+workflow_stage: makeSources
 licence:      silent
 licence_at:   four places, the About and the Steam page among them
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -25,7 +25,7 @@ remaining:
   - feature: executable regression suite and structured functional scenarios are not present
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
 updated:      2026-10-14
-protocols_read_sha: 583ce1259235b54ebacca29e1116689d1d24e589
+protocols_read_sha: 6eeb289af92096fa3a7ee40825e3b5221030873d
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
