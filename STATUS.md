@@ -19,7 +19,6 @@ workshop:
 remaining:
   - defect: installed Pomeranian Continued still includes the broad upstream recipe patch
   - unverified: no duplicate search run (1.a, Search-Workshop.sh)
-  - defect: Preview-source.png has a round gradient halo and textured fur against the no-gradient, no-grain rule; owner's call
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
   - feature: executable regression suite and structured functional scenarios are not present
@@ -36,9 +35,9 @@ Full pass from `setupRepo`. Retained: `workflow_stage: makeSources` (2.g not met
 
 Fixed this pass: `.gitignore` gains `build/`, `Art/.render/`, `*.dds`; `PROMPT_POMERANIANADOGSAIDPATCHRENEW.md` deleted (illustration received, 2.f). The stale lines of the 2026-10-14 section below are superseded: first push done, no `Preview.png` in `Mod/About/` now, gitlink backup gone. The empty folder `..\PomeranianADogSaid2PatchRenew` could not be removed (in use by another process); delete it once released.
 
-Delivered art: `Art/ModIcon-source.png` and `Art/Preview-source.png` (1254 x 1254, owner's, untouched). `Mod/About/ModIcon.png` (128 x 128, 28.7 KB) and `Art/ModIcon.ico` regenerated after the source. `Art/Preview.ico` is stale (derived from the deleted upstream Preview) and is rebuilt at `mountPreview`.
+Delivered art: `Art/ModIcon-source.png` (1254 x 1254) and `Art/Preview-source.png` (1672 x 941, redelivered 2026-10-15 21:45 after a corrected prompt), both owner's, untouched. `Mod/About/ModIcon.png` (128 x 128, 28.7 KB) and `Art/ModIcon.ico` regenerated after the source. `Art/Preview.ico` is stale (derived from the deleted upstream Preview) and is rebuilt at `mountPreview`.
 
-Preview-source checks (2.e): 2 hue families, mean value 0.46, one readable face, subject readable at 268 px. Open point, owner's call, untouched: the lamp halo is a round gradient and the fur is textured; the table shows its legs from the front.
+Preview-source checks (2.e), directly inspected on the redelivered image: 1 hue family (`Measure-Palette.sh`), mean value 0.60, one readable face (the dog; the colonist is seen from behind), subject readable at 268 px, no halo, no lamp, table seen as a flat top without legs, no vignette, left two thirds calm for the title. The earlier 1254 x 1254 version (halo, textured fur, table legs) was replaced.
 
 Folder name decision (Virginie, 2026-10-15): `PomeranianADogSaid2Renew`. Display name and repository keep `A Dog Said Patch Renew` (literal equality not required, PUBLISHING.md, Nommage).
 
