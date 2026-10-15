@@ -10,7 +10,7 @@ visibility:   public
 detached:     no
 workflow_stage: declareDependencies[1.0.0]
 licence:      silent
-licence_at:   four places, the About and the Steam page among them
+licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
 dependencies: declared
 showcase:     missing
@@ -42,6 +42,7 @@ Dependency audit (4.a to 4.g), 2026-10-15, read from the installed Workshop copi
 - 4.f Not applicable: this mod adds no animal; it is itself the ADS2 integration of another mod's animal.
 - 4.d decision (Virginie, 2026-10-15): option 2, the mod keeps its declarations and the sorter is the one to adjust; the case was sent to the Audit workflow session through the Ticket Manager. ADS2 stays a hard dependency. Pending the answer on `sort-load-order.py`.
 - 1.a Duplicate search done, 2026-10-15 (`Search-Workshop.sh -p aka_Pomeranian -i '*.xml'` over the installed Workshop and local mods, 61 hits): no other mod enrols `aka_Pomeranian` in `ADS_Cat1` to `ADS_Cat3`. Hits: original patch 2020237999 (dead, 8), Pomeranian Continued 3682979759 (43, its embedded `Patch-ADogSaid` is the known upstream defect), Dogs mate 2441132298 (9, adds the animal to a mating group, unrelated), this mod (1).
+- 1.b Steam page facts, read by the Audit Workflow session on 2026-10-15 and relayed here (not read by this session): original patch 2020237999, "Pomeranian - A Dog Said Patch", by akairo (also author of the Pomeranian mod), tags 1.0 and 1.1, published 12 March 2020, never updated, creator offline, requires the old A Dog Said... Animal Prosthetics and Pomeranian, description "This patch is built-in since 1.2", no licence, no reuse permission; akairo's comment of 13 March 2020 says a built-in patch would give a red error without ADS and asks for an XML-only solution, Tyrant answers that the mod only has to test for A Dog Said in the load order. Pomeranian Continued 3682979759, port by Bernau31 (offline), tags 1.0 to 1.6, published 11 March 2026, 154 subscribers, "I do not own or claim the content of this mod", all content akairo's except the German translation, notes "Fixed the 'A dog said...' patch", no package ID changed, no licence, no reuse statement, no position from akairo. Original Pomeranian mod 1.0-1.4: 2020233722. Consistent with `licence: silent`.
 - 4.h Not passed: stage stays `declareDependencies[1.0.0]` until 4.d is resolved.
 
 Full pass from `setupRepo`. Moved to `workflow_stage: code[1.0.0]` once 2.a to 2.g were met (target version 1.0.0: nothing was ever released, no tag, no Workshop item; the former `[1.0.0]` changelog entry was merged into `[Unreleased]`). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
