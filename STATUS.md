@@ -8,7 +8,7 @@ packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
 detached:     no
-workflow_stage: code[1.0.0]
+workflow_stage: declareDependencies[1.0.0]
 licence:      silent
 licence_at:   four places, the About and the Steam page among them
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -30,6 +30,8 @@ protocols_read_sha: e733386f133716f60efbad53c37602935eda7050
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
 
 ## Workflow audit, 2026-10-15
+
+Stage now `declareDependencies[1.0.0]` (3.a to 3.d met: no `feature` entry for this version, no build for an XML-only mod, `[Unreleased]` in `CHANGELOG.md` up to date).
 
 Full pass from `setupRepo`. Moved to `workflow_stage: code[1.0.0]` once 2.a to 2.g were met (target version 1.0.0: nothing was ever released, no tag, no Workshop item; the former `[1.0.0]` changelog entry was merged into `[Unreleased]`). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
 
