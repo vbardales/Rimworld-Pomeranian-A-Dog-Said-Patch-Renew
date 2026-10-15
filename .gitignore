@@ -41,3 +41,8 @@ desktop.ini
 # Local generation intermediates; approved assets belong in Art/ or Mod/About/.
 /output/
 /.firecrawl/
+
+# Build intermediates and render controls (PUBLISHING.md, Depot).
+build/
+Art/.render/
+*.dds

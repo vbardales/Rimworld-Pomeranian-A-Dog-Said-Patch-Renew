@@ -17,18 +17,32 @@ showcase:     missing
 tested_on:
 workshop:
 remaining:
-  - unverified: first push of the standalone repository (commit 1 and 2 of setupRepo not yet pushed)
   - defect: installed Pomeranian Continued still includes the broad upstream recipe patch
-  - unverified: current GitHub visibility and remote content equivalence
+  - unverified: no duplicate search run (1.a, Search-Workshop.sh)
+  - defect: Preview-source.png has a round gradient halo and textured fur against the no-gradient, no-grain rule; owner's call
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
   - feature: executable regression suite and structured functional scenarios are not present
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
-updated:      2026-10-14
-protocols_read_sha: 6eeb289af92096fa3a7ee40825e3b5221030873d
+updated:      2026-10-15
+protocols_read_sha: 1ae53af82d9576a606e77280542ea4d52032c320
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
+
+## Workflow audit, 2026-10-15
+
+Full pass from `setupRepo`. Retained: `workflow_stage: makeSources` (2.g not met). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
+
+Fixed this pass: `.gitignore` gains `build/`, `Art/.render/`, `*.dds`; `PROMPT_POMERANIANADOGSAIDPATCHRENEW.md` deleted (illustration received, 2.f). The stale lines of the 2026-10-14 section below are superseded: first push done, no `Preview.png` in `Mod/About/` now, gitlink backup gone. The empty folder `..\PomeranianADogSaid2PatchRenew` could not be removed (in use by another process); delete it once released.
+
+Delivered art: `Art/ModIcon-source.png` and `Art/Preview-source.png` (1254 x 1254, owner's, untouched). `Mod/About/ModIcon.png` (128 x 128, 28.7 KB) and `Art/ModIcon.ico` regenerated after the source. `Art/Preview.ico` is stale (derived from the deleted upstream Preview) and is rebuilt at `mountPreview`.
+
+Preview-source checks (2.e): 2 hue families, mean value 0.46, one readable face, subject readable at 268 px. Open point, owner's call, untouched: the lamp halo is a round gradient and the fur is textured; the table shows its legs from the front.
+
+Folder name decision (Virginie, 2026-10-15): `PomeranianADogSaid2Renew`. Display name and repository keep `A Dog Said Patch Renew` (literal equality not required, PUBLISHING.md, Nommage).
+
+Protocols re-read: `AGENTS.md`, `AUDIT.md`, `CICD.md`, `GALLERY.md` (gallery subtitles), `scripts.md`; none changes this mod's current state.
 
 ## Workflow audit, 2026-10-14
 
