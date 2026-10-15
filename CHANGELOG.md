@@ -2,17 +2,10 @@
 
 All notable changes to this mod are documented here.
 
-## [Unreleased] — 2026-09-13
+## [Unreleased]
 
-- Established a standalone checkout while preserving the existing GitHub history.
-- Added the public unofficial title suffix and explicit consent/removal notice.
-- Added the final source-code link to the English About description.
-- Clarified the historical preview's excluded licence scope and pending game validation.
-- No patch behavior changed.
-
-## [1.0.0] — 2026-09-06
-
-First release. Rewrite of akairo's **Pomeranian - A Dog Said Patch** for RimWorld 1.6.
+First release (1.0.0, not yet published). Rewrite of akairo's **Pomeranian - A Dog Said Patch** for the
+latest RimWorld version.
 
 ### Fixed
 
@@ -73,10 +66,17 @@ First release. Rewrite of akairo's **Pomeranian - A Dog Said Patch** for RimWorl
   `SelectMany` over the running mods followed by `PatchOperation.Apply`.
 - `<incompatibleWith>akairo.Pomeranian.ADogSaidPatch</incompatibleWith>`: the two would both add
   `aka_Pomeranian`, and the original would still be matching every recipe in the game.
+- The ` (unofficial)` title suffix, the `UNOFFICIAL` notice with the removal-on-request commitment,
+  and the source-code link at the end of the English description.
+- A standalone repository for the mod, keeping the existing GitHub history.
+- A ModIcon and an own Preview illustration source.
+
+### Removed
+
+- akairo's own `About/Preview.png`, replaced by this rewrite's own image.
 
 ### Unchanged
 
-- `About/Preview.png`, akairo's own.
 - The `defName` inserted, `aka_Pomeranian`. Confirmed still current in Pomeranian Continued's 1.6
   build, in `1.6/Defs/ThingDefs_Races/Races_Animal_pome.xml`, for both the `ThingDef` and the
   `PawnKindDef`.

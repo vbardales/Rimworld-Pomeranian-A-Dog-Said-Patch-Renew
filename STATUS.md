@@ -8,7 +8,7 @@ packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
 detached:     no
-workflow_stage: code[1.0.1]
+workflow_stage: code[1.0.0]
 licence:      silent
 licence_at:   four places, the About and the Steam page among them
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -31,7 +31,7 @@ protocols_read_sha: e733386f133716f60efbad53c37602935eda7050
 
 ## Workflow audit, 2026-10-15
 
-Full pass from `setupRepo`. Moved to `workflow_stage: code[1.0.1]` once 2.a to 2.g were met (target version 1.0.1). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
+Full pass from `setupRepo`. Moved to `workflow_stage: code[1.0.0]` once 2.a to 2.g were met (target version 1.0.0: nothing was ever released, no tag, no Workshop item; the former `[1.0.0]` changelog entry was merged into `[Unreleased]`). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
 
 Fixed this pass: `.gitignore` gains `build/`, `Art/.render/`, `*.dds`; `PROMPT_POMERANIANADOGSAIDPATCHRENEW.md` deleted (illustration received, 2.f). The stale lines of the 2026-10-14 section below are superseded: first push done, no `Preview.png` in `Mod/About/` now, gitlink backup gone. The empty folder `..\PomeranianADogSaid2PatchRenew` could not be removed (in use by another process); delete it once released.
 
