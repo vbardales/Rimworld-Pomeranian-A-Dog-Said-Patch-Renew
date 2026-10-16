@@ -59,6 +59,10 @@ Folder name decision (Virginie, 2026-10-15): `PomeranianADogSaid2Renew`. Display
 
 Protocols re-read: `AGENTS.md`, `AUDIT.md`, `CICD.md`, `GALLERY.md` (gallery subtitles), `scripts.md`; none changes this mod's current state.
 
+## Test status (writeTests), 2026-10-16
+
+7.a `TEST_SCENARIOS.md`: six scenarios, one per behaviour promised by the About description. 7.b/7.c `Tests/Test-Xml.ps1`: 9 tests, 9 passed, 0 failed, 0 skipped, replayed on `75a2231` (the revision tested). Each test was also run against a mutated copy of the mod (broken predicate, guard on a wrong node, MayRequire on the operation, wrong animal, `forceLoadBefore` back to `loadBefore`, ADS2 dependency dropped, version number in the description, `(unofficial)` dropped) and failed as intended; a first version of the version-number test let `1.6.` pass and was fixed. The shared `Check-ModBasics.ps1` is called first: its one finding, the missing `Preview.png`, is tolerated until `mountPreview`. 7.d open: no `Tests/Pickle/` yet, the game-only checks are listed in `TEST_SCENARIOS.md`. 7.g: the three translation fields are `not_applicable`, justified below. The local script `Tests/Test-Xml.ps1` was declared to the Audit Workflow session for `scripts/LOCAL_SCRIPTS.md` (no answer yet).
+
 ## Settings audit
 
 Confirmed 2026-10-15 at `settings[1.0.0]` against the sources: `Mod/` holds only `About.xml`, `ModIcon.png`, `ADSPatch.xml`, `ATTRIBUTION.md`, `LICENSE`; no hit for `MainButtonDef`, `ModSettings`, `Keyed`, `DefInjected`, `label` or `description` outside `About.xml`. `settings_audit: not_applicable` stands (analysis and automated checks done; no in-game check, the mod never ran).
