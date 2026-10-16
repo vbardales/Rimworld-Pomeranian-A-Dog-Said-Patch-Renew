@@ -8,7 +8,7 @@ packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
 detached:     no
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: settings[1.0.0]
 licence:      silent
 licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -18,13 +18,13 @@ tested_on:
 workshop:
 remaining:
   - defect: installed Pomeranian Continued still includes the broad upstream recipe patch
-  - defect: load-order cycle (4.d): modDependencies akairo.Pomeranian forces Pomeranian before this patch, but Pomeranian loadAfter ADS2 and this patch loadBefore ADS2 needs patch < ADS2 < Pomeranian; sort-load-order.py drops our loadBefore and places the patch after ADS2 (patch would not reach the categories in a Pickle staging); decision pending
+  - unverified: in the real game, order of akairo.Pomeranian (loadAfter ADS2, modDependencies of this mod) against this patch and ADS2 (the game reads `forceLoadBefore`; plain `loadBefore` and `modDependencies` ordering not read from code)
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
   - feature: executable regression suite and structured functional scenarios are not present
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
 updated:      2026-10-15
-protocols_read_sha: 1287089cf2f8e5f788811012d4fe080207e69b96
+protocols_read_sha: 813dbe91be1de3b49ccba6a7316bf40f42aca355
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
@@ -44,7 +44,8 @@ Dependency audit (4.a to 4.g), 2026-10-15, read from the installed Workshop copi
 - 1.a Duplicate search done, 2026-10-15 (`Search-Workshop.sh -p aka_Pomeranian -i '*.xml'` over the installed Workshop and local mods, 61 hits): no other mod enrols `aka_Pomeranian` in `ADS_Cat1` to `ADS_Cat3`. Hits: original patch 2020237999 (dead, 8), Pomeranian Continued 3682979759 (43, its embedded `Patch-ADogSaid` is the known upstream defect), Dogs mate 2441132298 (9, adds the animal to a mating group, unrelated), this mod (1).
 - 1.b Steam page facts, read by the Audit Workflow session on 2026-10-15 and relayed here (not read by this session): original patch 2020237999, "Pomeranian - A Dog Said Patch", by akairo (also author of the Pomeranian mod), tags 1.0 and 1.1, published 12 March 2020, never updated, creator offline, requires the old A Dog Said... Animal Prosthetics and Pomeranian, description "This patch is built-in since 1.2", no licence, no reuse permission; akairo's comment of 13 March 2020 says a built-in patch would give a red error without ADS and asks for an XML-only solution, Tyrant answers that the mod only has to test for A Dog Said in the load order. Pomeranian Continued 3682979759, port by Bernau31 (offline), tags 1.0 to 1.6, published 11 March 2026, 154 subscribers, "I do not own or claim the content of this mod", all content akairo's except the German translation, notes "Fixed the 'A dog said...' patch", no package ID changed, no licence, no reuse statement, no position from akairo. Original Pomeranian mod 1.0-1.4: 2020233722. Consistent with `licence: silent`.
 - 4.d update (2026-10-15, NPT answer): NPT read the sorter (not run): the cycle rule drops the soft edge pointing at the latest mod by input order, which is our `loadBefore`; `force*` is read as plain soft today. NPT plans to keep the force flag and to prefer dropping an upstream `loadAfter` over the owner's `loadBefore`, once the running Pickle ticket is done (NPT edits after `RUN_DONE`, needs Virginie's commit order). Asked of this mod and done (Virginie, 2026-10-15): `loadBefore` becomes `forceLoadBefore` on `SamBucher.ADogSaidAnimalProsthetics2` in `About.xml`. Expected order once NPT's fix lands: Pomeranian, patch, ADS2. Checked in the installed game, 2026-10-15: `Assembly-CSharp.dll` contains the names `forceLoadBefore`, `forceLoadAfter`, `ForceLoadBefore`, `ForceLoadAfter` (so `ModMetaData` reads them), and Core's own `About.xml` uses `<forceLoadBefore>` for its DLCs; the English UI strings `ModReorderConflict_MustLoadBefore` ("Cannot move {0}: It must be loaded before {1}.") and `ModMustLoadBefore` ("This must be loaded before: {0}.") exist, which points at a hard constraint in the mod list (inferred from the strings, not from decompiled code). Not verified: the exact meaning of the plain `loadBefore` in the game, whether `modDependencies` orders mods in the game, and the sorter result after NPT's change. `code_review_sha` is not set yet, so the `About.xml` change reopens nothing (AUDIT.md 8.m applies later).
-- 4.h Not passed: stage stays `declareDependencies[1.0.0]` until 4.d is resolved.
+- 4.d resolved (2026-10-15): NPT committed `7bafac7` in the protocols repository (`sort-load-order.py`: a forced edge is dropped last; a forced `loadBefore` wins over the same mod's `modDependencies` edge, logged). Rerun by this session on the real three `About.xml` (this mod's, 3682979759, 3238353862), `--rules none --version 1.6`, three different input orders: same order each time, `akairo.pomeranian`, `nelim.pomeranian.adogsaidpatch`, `sambucher.adogsaidanimalprosthetics2`, exit 0, no remaining cycle on our edges. Logged drops: the `modDependencies` edge ADS2 before this patch (we force the opposite) and the soft upstream `loadAfter` of Pomeranian on ADS2. Remaining unknown, in `remaining`: the real game's behaviour.
+- 4.h Passed 2026-10-15: 4.a to 4.g done, 4.d resolved (see above); stage moves to `settings[1.0.0]`.
 
 Full pass from `setupRepo`. Moved to `workflow_stage: code[1.0.0]` once 2.a to 2.g were met (target version 1.0.0: nothing was ever released, no tag, no Workshop item; the former `[1.0.0]` changelog entry was merged into `[Unreleased]`). Checkout `C:\Users\nelim\Documents\rimworld\PomeranianADogSaid2Renew`, distributed folder `Mod/`, junction `Mods\PomeranianADogSaid2Renew` to `Mod/` verified, no old junction left. Before this commit local `main` = `origin/main` = `ee77436`; remote repository `PUBLIC`.
 
