@@ -21,7 +21,7 @@ remaining:
   - unverified: in the real game, order of akairo.Pomeranian (loadAfter ADS2, modDependencies of this mod) against this patch and ADS2 (the game reads `forceLoadBefore`; plain `loadBefore` and `modDependencies` ordering not read from code)
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
-  - feature: executable regression suite and structured functional scenarios are not present
+  - feature: Pickle suite (S1 recipes offered and applicable on a real aka_Pomeranian, S3/S4 log checks) not written yet; 7.d open
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
 updated:      2026-10-15
 protocols_read_sha: 813dbe91be1de3b49ccba6a7316bf40f42aca355
