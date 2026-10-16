@@ -9,8 +9,9 @@ latest RimWorld version.
 
 ### Fixed
 
-- `Patches/ADSPatch.xml`: the XPath predicate `[defName = "A" or "B"]` corrected to
-  `[@Name="A" or @Name="B"]`. The original is not the test it looks like — in XPath, `or` converts
+- `Patches/ADSPatch.xml`: the XPath predicate `[defName = "A" or "B"]` is replaced by one where every
+  branch is compared (`[@Name="A" or @Name="B"]`; it uses `@Name` because the targets, the abstract
+  `ADS_Cat` defs, carry a `Name` attribute and no `<defName>` element). The original is not the test it looks like — in XPath, `or` converts
   each operand to a boolean and a non-empty string literal is `true`, so the predicate reduced to
   `… or true` and matched **every** `RecipeDef` in the document. Three of the mod's four operations
   were written that way, and they added `aka_Pomeranian` to the `recipeUsers` of every recipe in
