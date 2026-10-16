@@ -20,7 +20,9 @@ Open choices, not yet worked (to settle against the empty-place photographs of `
 - Nelim's outfit: contrast with the orange-gold coat, a deep teal or blue tunic over the fixture's trousers. Hairstyle: not chosen, no hair mod picked yet; decide after the empty-place photo.
 - Nelim's expression: the fixture default (`Nelim has her own face`, smirk smile, blink) for 3 and 4; a more serious face for 1 is unproven without Moving Vanilla Eyes (only `LidGeek`, `LidNormal`, `LidSharp`, `MouthNormal` resolve), so it may stay the default.
 - Animals face the camera in at least one capture (frame 3).
-- The pomeranian must be spawned with the animal step (`aka_Pomeranian`), its missing leg and its two prostheses applied as hediffs; whether a step already does that is unchecked (inventory of Pickle Tools, then Pickle, then `Elsewhere/`).
+- The pomeranian is spawned with the animal step (`an adult animal of kind "aka_Pomeranian" named ... is spawned at (x, z)`). Checked in `PickleTools/docs/steps.md` (2026-10-16): no step adds a missing part, a peg leg or a bionic leg to an animal. The debug menu has `Add Hediff` (`DebugTools_Health.AddHediff`), an action that needs a pawn, so its code has to be copied into a step of this mod's suite, then reported to NPT for `Elsewhere/`. Asked of NPT.
+- Place: `infirmary-animals` (`(213, 52)`, zoom 6, cream floor, 10 bedrolls) fits the story, but the empty-place photograph is not in the evidence folders I can read (only `hut` is there), so the place is not confirmed on a photo. Fallback: `hut`, which `GALLERY-PROPS.md` already records as an infirmary when staged with a bed, a lantern and the Health tab. Asked of NPT for the photo.
+- For the tests (`writeTests`, not for the gallery): Pickle Tools has `the recipe "<recipe>" is offered for the race "aka_Pomeranian"` and `... can be applied on a "<part>" of a "<kind>"`, which prove what this patch does without a game screenshot.
 
 ## Gallery subtitles
 
