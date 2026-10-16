@@ -8,7 +8,7 @@ packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
 detached:     no
-workflow_stage: settings[1.0.0]
+workflow_stage: localize[1.0.0]
 licence:      silent
 licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -60,6 +60,8 @@ Folder name decision (Virginie, 2026-10-15): `PomeranianADogSaid2Renew`. Display
 Protocols re-read: `AGENTS.md`, `AUDIT.md`, `CICD.md`, `GALLERY.md` (gallery subtitles), `scripts.md`; none changes this mod's current state.
 
 ## Settings audit
+
+Confirmed 2026-10-15 at `settings[1.0.0]` against the sources: `Mod/` holds only `About.xml`, `ModIcon.png`, `ADSPatch.xml`, `ATTRIBUTION.md`, `LICENSE`; no hit for `MainButtonDef`, `ModSettings`, `Keyed`, `DefInjected`, `label` or `description` outside `About.xml`. `settings_audit: not_applicable` stands (analysis and automated checks done; no in-game check, the mod never ran).
 
 Prepared 2026-10-15, to be confirmed at `settings` (`MOD_SETTINGS.md` read in full). Files read: `Mod/` holds `About/About.xml`, `About/ModIcon.png`, `Patches/ADSPatch.xml`, `ATTRIBUTION.md`, `LICENSE`. One `PatchOperationConditional` adds `aka_Pomeranian` to the three ADS2 category recipes: a fixed compatibility enrolment, no player choice, nothing to configure. No settings class, assembly, settings Def, `MainButtonDef` or shortcut exists, so there is neither an empty page nor a shortcut. Applies at mod load. Result: `not_applicable`. No in-game check made (never run).
 
