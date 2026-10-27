@@ -9,7 +9,7 @@ repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 remote:       https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew.git
 visibility:   public
 detached:     no
-workflow_stage: declareDependencies[1.0.0]
+workflow_stage: settings[1.0.0]
 licence:      silent
 licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
