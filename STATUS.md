@@ -24,6 +24,7 @@ remaining:
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
   - unverified: Pickle suite (Tests/Pickle, 2 passes, 4 scenario blocks) written and checked offline 2026-10-27, never run; real-game ticket belongs to playTests
+  - "2026-10-27 tickets filed at 264d021: 20261027-231430-273-0383 (01-ads2) and 20261027-231431-252-be6f (02-sans-ads2), evidence to Tests/Pickle/Inbox/<name>-264d021; wait for RUN_DONE"
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
 updated:      2026-10-27
