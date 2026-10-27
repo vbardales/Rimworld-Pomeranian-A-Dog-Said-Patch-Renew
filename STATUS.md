@@ -9,7 +9,7 @@ repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 remote:       https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew.git
 visibility:   public
 detached:     no
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence:      silent
 licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -62,7 +62,7 @@ Folder name decision (Virginie, 2026-10-15): `PomeranianADogSaid2Renew`. Display
 
 Protocols re-read: `AGENTS.md`, `AUDIT.md`, `CICD.md`, `GALLERY.md` (gallery subtitles), `scripts.md`; none changes this mod's current state.
 
-## Test status (writeTests), 2026-10-16
+## Test status (writeTests), 2026-10-27 (7.f: revision tested = `c40e9e9`; Mod/ unchanged since `a129013` except About description and docs; Test-Xml 9/9 replayed on it)
 
 7.a `TEST_SCENARIOS.md`: six scenarios, one per behaviour promised by the About description. 7.b/7.c `Tests/Test-Xml.ps1`: 9 tests, 9 passed, 0 failed, 0 skipped, replayed on `75a2231` (the revision tested). Each test was also run against a mutated copy of the mod (broken predicate, guard on a wrong node, MayRequire on the operation, wrong animal, `forceLoadBefore` back to `loadBefore`, ADS2 dependency dropped, version number in the description, `(unofficial)` dropped) and failed as intended; a first version of the version-number test let `1.6.` pass and was fixed. The shared `Check-ModBasics.ps1` is called first: its one finding, the missing `Preview.png`, is tolerated until `mountPreview`. 7.d open: no `Tests/Pickle/` yet, the game-only checks are listed in `TEST_SCENARIOS.md`. 7.g: the three translation fields are `not_applicable`, justified below. The local script `Tests/Test-Xml.ps1` was declared to the Audit Workflow session for `scripts/LOCAL_SCRIPTS.md` (no answer yet).
 
