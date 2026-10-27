@@ -8,7 +8,7 @@ packageId:    nelim.pomeranian.adogsaidpatch
 repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 visibility:   public
 detached:     no
-workflow_stage: writeTests[1.0.0]
+workflow_stage: setupRepo
 licence:      silent
 licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -23,7 +23,11 @@ remaining:
   - unverified: full patch integration, including optional XML Extensions branch
   - feature: Pickle suite (S1 recipes offered and applicable on a real aka_Pomeranian, S3/S4 log checks) not written yet; 7.d open
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
-updated:      2026-10-15
+  - "2026-10-27 defect (1.h): front matter lacks `remote`, `published`; `tested_on` empty instead of `never` (template); fix, then redo 1.i/1.j/1.k"
+  - "2026-10-27 defect (1.g, AGENTS.md no em dash rule): U+2014 in README.md, CHANGELOG.md, STATUS.md and probably TESTING.md; replace"
+  - "2026-10-27 defect (1.g, 7.a): README.md says 'one PatchOperationAdd' (it is a PatchOperationConditional + Add) and lists 'a prosthetic tail' that About.xml does not promise; About.xml says 'in-game testing' though the mod never ran"
+  - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
+updated:      2026-10-27
 protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
 ---
 
