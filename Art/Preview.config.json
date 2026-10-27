@@ -1,0 +1,53 @@
+{
+  "panel": {
+    "panelAnchor": "top-left",
+    "title": "Pomeranian - A Dog Said Patch Renew (unofficial)",
+    "titleSize": 34,
+    "titleParts": [
+      {
+        "text": "Pomeranian -",
+        "scale": 1
+      },
+      {
+        "break": true
+      },
+      {
+        "text": "A Dog Said",
+        "scale": 1
+      },
+      {
+        "break": true
+      },
+      {
+        "text": "Patch ",
+        "scale": 1
+      },
+      {
+        "text": "Renew",
+        "scale": 0.65,
+        "font": "ui",
+        "color": "secondary"
+      }
+    ],
+    "tag": "(unofficial)",
+    "tagInline": true,
+    "copyLines": [
+      "A pomeranian gets the animal surgeries and prosthetics of A Dog Said... Animal Prosthetics 2."
+    ]
+  },
+  "backgroundFile": "Preview-source.png",
+  "icon": {
+    "file": "ModIcon-source.png"
+  },
+  "palette": {
+    "veil": "#3A2F22",
+    "inkPrimary": "#F2ECE1",
+    "inkSecondary": "#F2CB8C",
+    "accent": "#2F8FE0",
+    "badgeInk": "#17120E"
+  },
+  "echo": {
+    "file": "echo-preview.png",
+    "color": "var(--accent)"
+  }
+}

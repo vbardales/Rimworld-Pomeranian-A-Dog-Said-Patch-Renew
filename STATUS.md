@@ -26,6 +26,7 @@ remaining:
   - unverified: Pickle suite (Tests/Pickle, 2 passes, 4 scenario blocks) written and checked offline 2026-10-27, never run; real-game ticket belongs to playTests
   - "2026-10-27 tickets filed at 264d021: 20261027-231430-273-0383 (01-ads2) and 20261027-231431-252-be6f (02-sans-ads2), evidence to Tests/Pickle/Inbox/<name>-264d021; wait for RUN_DONE"
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
+  - "2026-10-27 Preview rendered early at playTests by Virginie's request (Art/Preview.config.json, top-left panel, no echo yet); the panel hides the settler's head and half of the tray; Virginie decided to keep it as is (source kept, not redone); redo echo, contrast check and 268 px check at mountPreview"
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
 updated:      2026-10-27
 protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
