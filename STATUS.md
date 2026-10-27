@@ -24,7 +24,7 @@ remaining:
   - feature: Pickle suite (S1 recipes offered and applicable on a real aka_Pomeranian, S3/S4 log checks) not written yet; 7.d open
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
 updated:      2026-10-15
-protocols_read_sha: 813dbe91be1de3b49ccba6a7316bf40f42aca355
+protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
