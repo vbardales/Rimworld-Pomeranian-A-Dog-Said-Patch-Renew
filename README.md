@@ -5,34 +5,34 @@ If the original author contacts me to request its removal, I undertake to take i
 
 Rewrite of **akairo's Pomeranian - A Dog Said Patch** for the latest RimWorld version.
 
-**I am not the author of the original.** akairo wrote the Pomeranian mod and this patch for it —
+**I am not the author of the original.** akairo wrote the Pomeranian mod and this patch for it -
 all I did was rewrite the patch against the A Dog Said that exists today. Credit goes to akairo;
 mistakes in the rewrite are mine.
 
-Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999 — declares 1.0 and
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2020237999, declares 1.0 and
 1.1 and nothing further. The page is still online; the mod is abandoned, not withdrawn.
 
 ## What the mod does
 
 Lets a pomeranian have A Dog Said's animal surgeries: old wounds treated, peg legs, simple
-prosthetics and organs, bionics, a power claw, a prosthetic tail.
+prosthetics and organs, bionics and a power claw.
 
-One file, one `PatchOperationAdd`, no def of its own. No assembly, no DLC, no texture, no
+One file, one guarded operation (`PatchOperationConditional` around a `PatchOperationAdd`), no def of its own. No assembly, no DLC, no texture, no
 translation.
 
 ### It needs both of these
 
 | | |
 |---|---|
-| [Pomeranian Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3682979759) | `akairo.Pomeranian` — defines the dog. akairo's, maintained by Bernau31, declares 1.6 |
-| [A Dog Said... Animal Prosthetics 2](https://steamcommunity.com/sharedfiles/filedetails/?id=3238353862) | `SamBucher.ADogSaidAnimalProsthetics2` — defines the surgeries |
+| [Pomeranian Continued](https://steamcommunity.com/sharedfiles/filedetails/?id=3682979759) | `akairo.Pomeranian`, defines the dog. akairo's, maintained by Bernau31, declares 1.6 |
+| [A Dog Said... Animal Prosthetics 2](https://steamcommunity.com/sharedfiles/filedetails/?id=3238353862) | `SamBucher.ADogSaidAnimalProsthetics2`, defines the surgeries |
 
 Without A Dog Said 2 the guard finds nothing, the operation reports success, and the mod does
-nothing at all — no error line, nothing logged.
+nothing at all, no error line, nothing logged.
 
 ### It must load before A Dog Said 2
 
-`<loadBefore>` declares this, so any sorter will place it, but the reason is worth knowing because
+`<forceLoadBefore>` declares this, so any sorter will place it, but the reason is worth knowing because
 it is invisible from the outside. A Dog Said 2 does not attach animals to recipes directly: it
 keeps three abstract recipes, `ADS_Cat1` to `ADS_Cat3`, and its own final patch copies their
 `recipeUsers` onto the real surgery bases. A mod that adds an animal to those categories *after*
@@ -50,7 +50,7 @@ targeted names that no longer mean anything.
 ```
 
 In XPath, `or` converts each operand to a boolean, and a non-empty string literal is `true`. The
-predicate is therefore `… or true` — true for **every** `RecipeDef` in the document. The operation
+predicate is therefore `… or true`, true for **every** `RecipeDef` in the document. The operation
 adds `<li>aka_Pomeranian</li>` to the `recipeUsers` of every recipe in the game and in every mod
 loaded that declares one.
 
@@ -65,7 +65,7 @@ Counted rather than argued, with `System.Xml.XmlDocument`, no game launch needed
 | Core `Recipes_Surgery_Misc.xml` | 4 | **4** | 0 |
 | ADS 2 `Animal_Categories.xml` | 3 | **3** | 0 |
 
-The correct form repeats the test on every branch — `[@Name="A" or @Name="B"]` — which is also what
+The correct form repeats the test on every branch, `[@Name="A" or @Name="B"]`, which is also what
 A Dog Said 2's own compatibility patches use.
 
 ### The names it targeted are the old ones
@@ -78,7 +78,7 @@ A Dog Said 2's own compatibility patches use.
 | `InstallPowerClawAnimal` | present |
 | `InstallSimpleProstheticTailAnimal` | present |
 
-Most survived, so this alone would not have been fatal — but the one that did not is old-wound
+Most survived, so this alone would not have been fatal, but the one that did not is old-wound
 treatment, which the original's description advertises as the point of the patch. And naming
 recipes one at a time stopped being how an animal is enrolled when A Dog Said 2 introduced its
 categories.
@@ -105,7 +105,7 @@ categories.
 the tooltip of its own settings: category 1 is rodents and tiny animals, category 2 is livestock
 and animals that cannot be trained, category 3 is *pack animals and trainable pets*.
 `aka_Pomeranian` declares `trainability Advanced`, `petness 1` and the `AnimalPet` trade tag. The
-lists are cumulative, so a category-3 animal appears in all three — which is where vanilla's husky,
+lists are cumulative, so a category-3 animal appears in all three, which is where vanilla's husky,
 labrador and yorkshire terrier sit, and what A Dog Said 2's own Dinosauria patch does for
 *Tyrannosaurus rex*.
 
@@ -113,7 +113,7 @@ labrador and yorkshire terrier sit, and what A Dog Said 2's own Dinosauria patch
 `PatchOperationConditional` selects `ADS_Cat1`; if it is absent the operation reports success and
 logs nothing. The obvious-looking alternative is a trap: **`MayRequire` on an `<Operation>` is read
 by nothing.** `Verse.PatchOperation` has no such field, and `ModContentPack.LoadPatches`, which
-builds the operations, never reads the attribute — so the operation would apply whether A Dog Said 2
+builds the operations, never reads the attribute, so the operation would apply whether A Dog Said 2
 is loaded or not. What makes the wrong form so convincing is that the attribute *is* honoured
 everywhere else: on a def node, on a `<li>`, on any ordinary field element. A Dog Said 2 itself uses
 it correctly, on the `<li>`s inside those category lists. Live 1.6 mods ship the useless form, and
@@ -123,7 +123,7 @@ shown in the mod list, which is a different string again.
 ## Known: Pomeranian Continued ships the broken patch too
 
 Pomeranian Continued carries a copy of akairo's original inside itself, at
-`Patch-ADogSaid/Patches/patches.xml` — byte for byte the same file, same SHA-256 — and its
+`Patch-ADogSaid/Patches/patches.xml`, byte for byte the same file, same SHA-256, and its
 `LoadFolders.xml` loads that folder whenever A Dog Said 2 is active.
 
 So the always-true predicate is live today for anyone running both mods. The pomeranian collects
@@ -147,7 +147,7 @@ the repair belongs there: `ATTRIBUTION.md` says what it is.
 
 ## Credit and removal
 
-akairo declared no licence — no file, nothing in `About.xml`, no linked repository, nothing in the
+akairo declared no licence, no file, nothing in `About.xml`, no linked repository, nothing in the
 body of the Steam description. Republished under the usual convention for abandoned mods: full
 credit, a link to the original, removal on request without argument.
 
