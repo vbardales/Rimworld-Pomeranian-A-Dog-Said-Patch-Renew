@@ -23,7 +23,7 @@ remaining:
   - unverified: in the real game, order of akairo.Pomeranian (loadAfter ADS2, modDependencies of this mod) against this patch and ADS2 (the game reads `forceLoadBefore`; plain `loadBefore` and `modDependencies` ordering not read from code)
   - unverified: current upstream permission and source-page review beyond installed files
   - unverified: full patch integration, including optional XML Extensions branch
-  - feature: Pickle suite (S1 recipes offered and applicable on a real aka_Pomeranian, S3/S4 log checks) not written yet; 7.d open
+  - unverified: Pickle suite (Tests/Pickle, 2 passes, 4 scenario blocks) written and checked offline 2026-10-27, never run; real-game ticket belongs to playTests
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
 updated:      2026-10-27

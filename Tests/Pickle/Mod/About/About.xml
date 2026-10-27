@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Pomeranian - A Dog Said Patch Renew - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.pomeranian.adogsaidpatch.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game acceptance tests for Pomeranian - A Dog Said Patch Renew. Development only; never published.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.pomeranian.adogsaidpatch</packageId>
+      <displayName>Pomeranian - A Dog Said Patch Renew (unofficial)</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.pomeranian.adogsaidpatch</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>

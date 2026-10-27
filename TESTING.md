@@ -4,7 +4,7 @@ Not shipped: it lives beside `Mod/`, never inside it. Written 2026-10-16 against
 
 `PUBLICATION.md` has no Steam description block yet, so the behaviours below are the ones promised by `Mod/About/About.xml` (`<description>`). One scenario per promised behaviour. The mod is XML only (one patch, `Patches/ADSPatch.xml`): no assembly, no def of its own, no text, no settings. A scenario therefore asks one of three things: does the patch reach its target, does it write only what it says, is it silent where its target is absent.
 
-Legend for **Run by**: `Test-Xml` is `pwsh -NoProfile -File Tests/Test-Xml.ps1` (offline, no game, needs the installed game, A Dog Said... Animal Prosthetics 2 and Pomeranian Continued). `Pickle` marks a check that only a running game can make; no Pickle suite exists yet (`Tests/Pickle/` is not written, see "Pickle, not written"). Pickle runs are filed as tickets with the Ticket Manager, never launched by a session.
+Legend for **Run by**: `Test-Xml` is `pwsh -NoProfile -File Tests/Test-Xml.ps1` (offline, no game, needs the installed game, A Dog Said... Animal Prosthetics 2 and Pomeranian Continued). `Pickle` marks a check that only a running game can make (suite in `Tests/Pickle/`, written, never run). Pickle runs are filed as tickets with the Ticket Manager, never launched by a session.
 
 ## Scenarios
 
@@ -59,9 +59,9 @@ Legend for **Run by**: `Test-Xml` is `pwsh -NoProfile -File Tests/Test-Xml.ps1` 
 - The extra recipes on the pomeranian's operations tab when Pomeranian Continued and A Dog Said 2 are both active come from Pomeranian Continued's embedded copy of the original patch (`Patch-ADogSaid/`, 43 hits in the duplicate search). The description says so ("A NOTE ON POMERANIAN CONTINUED"); this mod does not fix it and has no scenario for it.
 - Translations, settings, a settings page, a MainButtons shortcut: none exist (`STATUS.md`, Settings audit and Translation audit).
 
-## Pickle, not written (7.d)
+## Pickle suite (7.d, written 2026-10-27, never run)
 
-No `Tests/Pickle/` exists. What only a running game can show is S1 (recipes offered and applicable on a real `aka_Pomeranian`) and the S3/S4 log checks. They need a `-DepMap` with Pomeranian Continued (`akairo.Pomeranian`, 3682979759) and A Dog Said 2 (`SamBucher.ADogSaidAnimalProsthetics2`, 3238353862), and the Pickle Tools steps `the recipe ... is offered for the race ...` and `... can be applied on a ... of a ...`. Each `@requires:<packageId>` will name the map that mounts it. The suite is written with the gallery steps at `shootGallery`, not here: this file states the plan, it does not claim a run.
+`Tests/Pickle/` holds two passes (`README.md` there): `01-ads2` (S1, S4, log) and `02-sans-ads2` (S3). What only a running game can show is S1 (recipes offered on a real `aka_Pomeranian`; "applicable on a body part" is not asserted) and the S3/S4 log checks. They need a `-DepMap` with Pomeranian Continued (`akairo.Pomeranian`, 3682979759) and A Dog Said 2 (`SamBucher.ADogSaidAnimalProsthetics2`, 3238353862), and the Pickle Tools steps `the recipe ... is offered for the race ...` and `... can be applied on a ... of a ...`. Each `@requires:<packageId>` will name the map that mounts it. The gallery steps are written at `shootGallery`. The suite was checked offline only (build, `Check-Steps.ps1`): no run has been played.
 
 ## Figures checked
 

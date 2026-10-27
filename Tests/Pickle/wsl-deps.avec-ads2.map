@@ -1,0 +1,5 @@
+# Pass 1: Pomeranian Continued, this patch, THEN A Dog Said... Animal Prosthetics 2, the order the
+# patch declares with forceLoadBefore. The three lines fix the order explicitly.
+akairo.Pomeranian 3682979759
+nelim.pomeranian.adogsaidpatch path:PomeranianADogSaid2Renew/Mod
+SamBucher.ADogSaidAnimalProsthetics2 3238353862

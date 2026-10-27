@@ -46,3 +46,8 @@ desktop.ini
 build/
 Art/.render/
 *.dds
+
+# Pickle reports: disk only (AGENTS.md).
+Tests/Pickle/Evidence/
+Tests/Pickle/Inbox/
+Tests/Pickle/Parked/
