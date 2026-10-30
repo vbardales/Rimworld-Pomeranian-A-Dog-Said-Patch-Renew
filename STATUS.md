@@ -28,8 +28,9 @@ remaining:
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
   - "2026-10-27 Preview rendered early at playTests by Virginie's request (Art/Preview.config.json, top-left panel, no echo yet); the panel hides the settler's head and half of the tray; Virginie decided to keep it as is (source kept, not redone); redo echo, contrast check and 268 px check at mountPreview"
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
-updated:      2026-10-27
-protocols_read_sha: 43dd90d4b7873c500347fba1be01275a48d5795b
+  - "2026-10-31 Tests/Test-Xml.ps1 applies the patch with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); 9/9 green on 6f437f4"
+updated:      2026-10-31
+protocols_read_sha: 96fd9a43a0beb0d12889a50e05135b8d86ded0e3
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
