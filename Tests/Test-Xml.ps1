@@ -37,6 +37,7 @@ param(
 $ErrorActionPreference = 'Stop'
 $ModRoot = (Resolve-Path $ModRoot).Path
 . (Join-Path $Protocols 'scripts\lib\TestRunner.ps1')
+. (Join-Path $Protocols 'scripts\lib\PatchEngine.ps1')
 
 $mod       = Join-Path $ModRoot 'Mod'
 $aboutPath = Join-Path $mod 'About\About.xml'
@@ -149,10 +150,8 @@ It 'applied to A Dog Said 2, the patch writes exactly three entries and leaves a
   $ctl = $doc.CreateElement('RecipeDef'); $ctl.SetAttribute('Name', 'ControlRecipe'); $ctl.SetAttribute('Abstract', 'True')
   $ru = $doc.CreateElement('recipeUsers'); $li = $doc.CreateElement('li'); $li.InnerText = 'Human'; [void]$ru.AppendChild($li); [void]$ctl.AppendChild($ru)
   [void]$doc.DocumentElement.AppendChild($ctl)
-  $xp = $patch.SelectSingleNode('//match/xpath').InnerText
-  $targets = @($doc.SelectNodes($xp))
-  if ($targets.Count -ne 3) { "the add xpath reaches $($targets.Count) recipeUsers lists, expected 3"; return }
-  foreach ($t in $targets) { foreach ($v in $patch.SelectNodes('//match/value/li')) { [void]$t.AppendChild($doc.ImportNode($v, $true)) } }
+  # The real operation (guard, then add) runs through the shared engine, not a hand-made copy of it.
+  try { Invoke-PatchFile $patchPath $doc -RequireMatch } catch { "the patch does not apply: $($_.Exception.Message)"; return }
   $n = @($doc.SelectNodes('//recipeUsers/li[text()="aka_Pomeranian"]')).Count
   if ($n -ne 3) { "expected 3 aka_Pomeranian entries after the add, found $n" }
   $c = @($doc.SelectNodes('/Defs/RecipeDef[@Name="ControlRecipe"]/recipeUsers/li') | ForEach-Object { $_.InnerText })
