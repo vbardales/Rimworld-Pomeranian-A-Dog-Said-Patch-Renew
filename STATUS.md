@@ -31,6 +31,7 @@ remaining:
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
   - "2026-10-31 Tests/Test-Xml.ps1 applies the patch with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); 9/9 green on 6f437f4"
   - "2026-11-02 replay-audit: stays playTests. Open: 8.c pass 2 not run (staging error, ask to NPT), 8.g six scenarios of TESTING.md not all played, 8.i FR/EN not applicable to confirm, 8.l evidence not minified (Inbox only, no docs/runs line, tested_on never), 8.m code_review_sha absent"
+  - "2026-11-02 ticket 02 refiled after NPT runner fix (c2203e0, not run before) and the `~SamBucher.ADogSaidAnimalProsthetics2` line in wsl-deps.sans-ads2.map: 20261102-193459-147-2b92, evidence to Tests/Pickle/Inbox/02-sans-ads2-<sha>; wait for RUN_DONE; if it still stops on ADS2, tell NPT (local_03a66e9e)"
 updated:      2026-11-02
 protocols_read_sha: 525411afd24dceac5b6d5a0f26272dc8899da71b
 ---
