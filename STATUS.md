@@ -30,7 +30,8 @@ remaining:
   - "2026-10-27 Preview rendered early at playTests by Virginie's request (Art/Preview.config.json, top-left panel, no echo yet); the panel hides the settler's head and half of the tray; Virginie decided to keep it as is (source kept, not redone); redo echo, contrast check and 268 px check at mountPreview"
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
   - "2026-10-31 Tests/Test-Xml.ps1 applies the patch with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); 9/9 green on 6f437f4"
-updated:      2026-10-31
+  - "2026-11-02 replay-audit: stays playTests. Open: 8.c pass 2 not run (staging error, ask to NPT), 8.g six scenarios of TESTING.md not all played, 8.i FR/EN not applicable to confirm, 8.l evidence not minified (Inbox only, no docs/runs line, tested_on never), 8.m code_review_sha absent"
+updated:      2026-11-02
 protocols_read_sha: 525411afd24dceac5b6d5a0f26272dc8899da71b
 ---
 
