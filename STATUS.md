@@ -25,12 +25,13 @@ remaining:
   - unverified: full patch integration, including optional XML Extensions branch
   - unverified: Pickle suite (Tests/Pickle, 2 passes, 4 scenario blocks) written and checked offline 2026-10-27, never run; real-game ticket belongs to playTests
   - "2026-10-27 tickets filed at 264d021: 20261027-231430-273-0383 (01-ads2) and 20261027-231431-252-be6f (02-sans-ads2), evidence to Tests/Pickle/Inbox/<name>-264d021; wait for RUN_DONE"
+  - "2026-11-02 ticket 01-ads2 (20261027-231430-273-0383): 3/3 passed, evidence Tests/Pickle/Inbox/01-ads2-264d021. Ticket 02-sans-ads2 (20261027-231431-252-be6f): no report, launcher exit 1, `error: no Workshop id known for SamBucher.ADogSaidAnimalProsthetics2; add it to the STEAM map` (staging reads the About modDependencies, ADS2 is declared hard, so a pass without ADS2 cannot stage); to settle with NPT, not rerun yet"
   - unverified: never seen running; final EN/FR, logs, new-game and existing-save scenarios pending
   - "2026-10-27 Preview rendered early at playTests by Virginie's request (Art/Preview.config.json, top-left panel, no echo yet); the panel hides the settler's head and half of the tray; Virginie decided to keep it as is (source kept, not redone); redo echo, contrast check and 268 px check at mountPreview"
   - "2026-10-27 note: stage reset from writeTests[1.0.0] to setupRepo by Virginie's request after a full re-audit; stages 2 to 6 not found unmet, to be replayed in order"
   - "2026-10-31 Tests/Test-Xml.ps1 applies the patch with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); 9/9 green on 6f437f4"
 updated:      2026-10-31
-protocols_read_sha: 96fd9a43a0beb0d12889a50e05135b8d86ded0e3
+protocols_read_sha: 525411afd24dceac5b6d5a0f26272dc8899da71b
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
