@@ -47,7 +47,6 @@
     "badgeInk": "#17120E"
   },
   "echo": {
-    "file": "echo-preview.png",
-    "color": "var(--accent)"
+    "file": "echo-preview.png"
   }
 }
