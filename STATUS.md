@@ -15,7 +15,7 @@ licence_at:   "2026-10-15: no licence and no reuse permission on the original pa
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
 dependencies: declared
 showcase:     missing
-tested_on:    never
+tested_on:    2026-11-02 pickle 264d021 (01-ads2 3/3 green, 02-sans-ads2 no report)
 workshop:     none
 published:    no
 workshop_required_items: "n/a, not released yet"
