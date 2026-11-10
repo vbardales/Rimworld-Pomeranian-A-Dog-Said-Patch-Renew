@@ -32,8 +32,9 @@ remaining:
   - "2026-10-31 Tests/Test-Xml.ps1 applies the patch with scripts/lib/PatchEngine.ps1 (shared call, no local interpreter); 9/9 green on 6f437f4"
   - "2026-11-02 replay-audit: stays playTests. Open: 8.c pass 2 not run (staging error, ask to NPT), 8.g six scenarios of TESTING.md not all played, 8.i FR/EN not applicable to confirm, 8.l evidence not minified (Inbox only, no docs/runs line, tested_on never), 8.m code_review_sha absent"
   - "2026-11-02 ticket 02 refiled after NPT runner fix (c2203e0, not run before) and the `~SamBucher.ADogSaidAnimalProsthetics2` line in wsl-deps.sans-ads2.map: 20261102-193459-147-2b92, evidence to Tests/Pickle/Inbox/02-sans-ads2-<sha>; wait for RUN_DONE; if it still stops on ADS2, tell NPT (local_03a66e9e)"
-updated:      2026-11-02
-protocols_read_sha: 525411afd24dceac5b6d5a0f26272dc8899da71b
+  - "2026-11-10 resume: ticket 02 (20261102-193459-147-2b92) done exit 1, no report (Inbox/02-sans-ads2-f2c357d holds only no-report.txt, dispatcher log missing); NPT asked for the cause, refile after answer. Inbox folders unread by lifecycle rule: 01-ads2-264d021 (3/3 green, already studied) to minify into Evidence or delete, 02 to delete after NPT answer. Art/Preview.config.json has an uncommitted rewrite by another session (new schema, title 'A Dog Said 2 Patch'), not committed here; Preview.png (2026-10-28) is the truth, redo at mountPreview (10.a bis)"
+updated:      2026-11-10
+protocols_read_sha: 9e7a8566fa4608136bbc1272adc5c8e504d63b1b
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
