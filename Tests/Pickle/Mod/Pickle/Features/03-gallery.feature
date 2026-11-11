@@ -9,7 +9,7 @@
 # operates. Biscuit then trots in the garden on a peg leg and walks the terrace at dusk. One `I set the hour to N` per image, 2,500 ticks per game hour.
 #
 # SHOTS (index, place, hour, type)
-#   1. workshop-1-carried-in  infirmary-animals 8h (centre 213, 52) wide, opening, root size 3.5. SUN_MedicalAnimalBed at (213, 52), TorchLamp at (209, 50), (217, 50)
+#   1. workshop-1-carried-in  infirmary-animals 8h (centre 213, 52) wide, opening, root size 3.5. AnimalBed at (213, 52), TorchLamp at (209, 50), (217, 50)
 #                     and (213, 55) lit, PlantPot with Plant_Daylily at (209, 52) and (217, 52) (the room beds hold (209, 54)), Shelf near (216, 49). Biscuit (aka_Pomeranian, missing its rear left leg)
 #                     lies on the bed at (213, 52); Nelim holds MedicineIndustrial and stops at (211, 52) facing east, smiling; Health tab open, "missing hind leg".
 #                     Instant: she has just come in, she is about to kneel. Foreground Nelim, background torches and plants, soft morning light.
@@ -48,7 +48,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
-    And Nelim's Pickle Tools: I place the decor "SUN_MedicalAnimalBed" at (213, 52)
+    And Nelim's Pickle Tools: I place the decor "AnimalBed" at (213, 52)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (209, 50)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (217, 50)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (213, 55)
@@ -102,7 +102,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Soren" wears "LisaWork_ApparelLabCoat" made of "Cloth"
     And Nelim's Pickle Tools: the "LisaWork_ApparelLabCoat" worn by "Soren" is dyed rgb (240, 240, 240)
     And Nelim's Pickle Tools: "Soren" wears "LisaWork_ApparelStethoscope" made of "Steel"
-    And Nelim's Pickle Tools: I place the decor "SUN_MedicalAnimalBed" at (213, 52)
+    And Nelim's Pickle Tools: I place the decor "AnimalBed" at (213, 52)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (209, 50)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (217, 50)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (213, 55)
@@ -158,7 +158,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Soren" wears "LisaWork_ApparelLabCoat" made of "Cloth"
     And Nelim's Pickle Tools: the "LisaWork_ApparelLabCoat" worn by "Soren" is dyed rgb (240, 240, 240)
     And Nelim's Pickle Tools: "Soren" wears "LisaWork_ApparelStethoscope" made of "Steel"
-    And Nelim's Pickle Tools: I place the decor "SUN_MedicalAnimalBed" at (213, 52)
+    And Nelim's Pickle Tools: I place the decor "AnimalBed" at (213, 52)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (209, 50)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (217, 50)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (213, 55)
