@@ -15,7 +15,7 @@ licence_at:   "2026-10-15: no licence and no reuse permission on the original pa
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
 dependencies: declared
 showcase:     missing
-tested_on:    2026-11-02 pickle 264d021 (01-ads2 3/3 green, 02-sans-ads2 no report)
+tested_on:    2026-11-11 pickle 8fe30d0 (01-ads2 3/3 green on 264d021, 02-sans-ads2 1/1 green)
 workshop:     private item 3837928560 (PublishedFileId.txt)
 published:    no      # item exists on Workshop but is private; flipping it public is a later gesture of Virginie
 workshop_required_items: "n/a, not released yet"
@@ -37,9 +37,9 @@ remaining:
   - "2026-11-10 ticket 02 (20261110-153453-358-8e5e, one scenario) ran on lane azure: log `error: no Workshop id known for SamBucher.ADogSaidAnimalProsthetics2` at staging, no report; the azure staging path does not honour the ~ line of wsl-deps.sans-ads2.map (supported in stage-pickle-wsl.sh since c2203e0). Told NPT + TM; fix committed in protocols 8fe30d0 (${pid#~}); refiled one scenario 20261110-155558-271-f4f9, evidence Tests/Pickle/Inbox/02-sans-ads2-fix-8fe30d0; wait for RUN_DONE"
   - "2026-11-10 replay-audit: stays playTests, first open 8.c. Fixed in place: 6.f TRANSLATION_REVIEW.md replaces FRENCH_REVIEW.md, 4.g workshop_required_items n/a not released yet. Open: 8.c ticket 02 no report (NPT asked), 8.f, 8.g (S3 plus offline-only S2 S5 S6), 8.i log check without ADS2, 8.l sort Inbox plus docs/runs line plus tested_on, 8.m code_review_sha absent. Ledger .replays/PomeranianADogSaid2Renew-20261110.tsv"
   - "2026-11-11 Virginie created the PRIVATE Workshop item 3837928560 at 17:00 with the in-game upload button and claus.changenotes (Publisher by Claus); Mod/About/PublishedFileId.txt committed d53396d (pushed). Claus rewrote About.xml (BOM, modVersion 0.1.0 glued before </ModMetaData>): restored without BOM, <modVersion>1.0.0</modVersion> placed after <url> (sibling mods convention), 1.0.0 = target in STATUS and [Unreleased] of CHANGELOG, never published. Not published, item not public; Steam page, tags and public flip are later gestures"
-  - "2026-11-11 ticket 02 (20261110-155558-271-f4f9) green 1/1 (A Dog Said 2 is absent, 842 ms), evidence Tests/Pickle/Inbox/02-sans-ads2-fix-8fe30d0 (summary.json read); still to do: 8.l sort Inbox, docs/runs line, tested_on"
+  - "2026-11-11 ticket 02 (20261110-155558-271-f4f9) green 1/1 (A Dog Said 2 is absent, 842 ms), evidence Tests/Pickle/Inbox/02-sans-ads2-fix-8fe30d0 (summary.json read); 8.l done 2026-11-11 (Inbox sorted: run in Evidence with RELEASE.md, docs/runs/history.md line, tested_on set). Still open: 8.f, 8.g (S3 plus offline-only S2 S5 S6), 8.i log check without ADS2, 8.m code_review_sha absent"
 updated:      2026-11-11
-protocols_read_sha: 0c14758b07f449679e48606eb3af087d05cfe8f9
+protocols_read_sha: 501118d582fdc4264a95124bbef2fae7badb0ed3
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
