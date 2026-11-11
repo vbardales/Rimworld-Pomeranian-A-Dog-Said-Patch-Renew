@@ -42,6 +42,7 @@ remaining:
   - "2026-11-11 8.m code review (Opus sub-agent, Mod/ XML only, 0 to 325785e): no defect; notes: About.xml description mentions 1.0/1.1 of the original mod (lint clean, kept), Mod/desktop.ini gitignored not shipped by git. 8.f, 8.g, 8.i closed: ticket 20261111-173141-115-8455 2/2 green (clean log, surgery absent without ADS2), 01 3/3, Test-Xml 9/9, FR/EN not_applicable. code_review_sha set. Evidence minified, Inbox empty. playTests criteria met; stage move is for the TM or Virginie"
   - "2026-11-11 playTests left (8.a to 8.m met, 8.n): stage shootGallery[1.0.0]. Next: mod-workflow:sync-nsb-npt then write-shotlist, then 1.7 diagnostic pass (tested_1_7 still unset)"
   - "2026-11-11 gallery: shotlist final (score 5 per scene), scenarios written in Tests/Pickle/Mod/Pickle/Features/03-gallery.feature (5 scenarios, header = shotlist), map Tests/Pickle/wsl-deps.gallery.map, Check-Steps all steps resolve, Check-ShotlistVsScenario OK; NPT steps (leg hediff, bed, Operations list, bill and operates) committed by NPT, not played; subtitles in PUBLICATION.md not written yet"
+  - "2026-11-11 gallery ticket filed at dfebe3b: 20261111-183146-061-c4b8 (03-gallery, 5 scenes, DepMap wsl-deps.gallery.map), evidence Tests/Pickle/Inbox/gallery-dfebe3b; wait for RUN_DONE; keep Mod/ and the feature frozen until then; first run expected to need cell and step fixes (NPT steps not played)"
 updated:      2026-11-11
 code_review_sha: 325785e05fabd79db125c449e30e0576f5a442f7
 protocols_read_sha: d3e206e35f32d4b917732ea20dd7d1fb63504d7d
