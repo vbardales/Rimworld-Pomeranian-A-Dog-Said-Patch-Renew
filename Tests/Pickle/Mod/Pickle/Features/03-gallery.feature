@@ -175,7 +175,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: I place the decor "Stool" near (211, 52)
-    And Nelim's Pickle Tools: I place the decor "WoodLog" at (212, 50)
+    And Nelim's Pickle Tools: 3 of the item "WoodLog" are spawned at (212, 51)
     And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (213, 52)
     And Nelim's Pickle Tools: the animal "Biscuit" is missing its "rear left leg"
     And Nelim's Pickle Tools: the animal "Biscuit" lies on the bed at (213, 52)
@@ -184,11 +184,9 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" waits in place
     And Nelim's Pickle Tools: "Soren" mouth is "MouthNormal"
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: the colonist "Soren" holds "WoodLog" in hand
-    And Nelim's Pickle Tools: "Soren" stands at (212, 53) facing East
     Given game speed is normal
     When Nelim's Pickle Tools: "Soren" operates on the animal "Biscuit"
-    And I wait 120 ticks
+    And I wait 60 ticks
     And game speed is paused
     And Nelim's Pickle Tools: I frame the area centred on (211, 52) at root size 2.5
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
