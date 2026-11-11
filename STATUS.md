@@ -45,7 +45,7 @@ remaining:
   - "2026-11-11 gallery ticket filed at dfebe3b: 20261111-183146-061-c4b8 (03-gallery, 5 scenes, DepMap wsl-deps.gallery.map), evidence Tests/Pickle/Inbox/gallery-dfebe3b; wait for RUN_DONE; keep Mod/ and the feature frozen until then; first run expected to need cell and step fixes (NPT steps not played)"
 updated:      2026-11-11
 code_review_sha: 325785e05fabd79db125c449e30e0576f5a442f7
-protocols_read_sha: d3e206e35f32d4b917732ea20dd7d1fb63504d7d
+protocols_read_sha: 1fca77a5c8a1990b5542aac2717a1e96dc822e1d
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
