@@ -7,6 +7,7 @@
     <li>1.6</li>
   </supportedVersions>
   <url>https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew</url>
+  <modVersion>1.0.0</modVersion>
   <modDependencies>
     <li>
       <packageId>akairo.Pomeranian</packageId>

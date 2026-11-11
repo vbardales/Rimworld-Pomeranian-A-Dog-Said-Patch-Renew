@@ -16,8 +16,8 @@ upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no 
 dependencies: declared
 showcase:     missing
 tested_on:    2026-11-02 pickle 264d021 (01-ads2 3/3 green, 02-sans-ads2 no report)
-workshop:     none
-published:    no
+workshop:     private item 3837928560 (PublishedFileId.txt)
+published:    no      # item exists on Workshop but is private; flipping it public is a later gesture of Virginie
 workshop_required_items: "n/a, not released yet"
 remaining:
   - defect: installed Pomeranian Continued still includes the broad upstream recipe patch
@@ -36,7 +36,8 @@ remaining:
   - "2026-11-10 resume: ticket 02 (20261102-193459-147-2b92) done exit 1, no report (Inbox/02-sans-ads2-f2c357d holds only no-report.txt, dispatcher log missing); NPT asked for the cause, refile after answer. Inbox folders unread by lifecycle rule: 01-ads2-264d021 (3/3 green, already studied) to minify into Evidence or delete, 02 to delete after NPT answer. Preview config (new schema, title 'A Dog Said 2 Patch') and Preview.png re-rendered and committed 4393620 on Virginie's order; echo overlaps the panel edge, redo at mountPreview (10.a bis)"
   - "2026-11-10 ticket 02 (20261110-153453-358-8e5e, one scenario) ran on lane azure: log `error: no Workshop id known for SamBucher.ADogSaidAnimalProsthetics2` at staging, no report; the azure staging path does not honour the ~ line of wsl-deps.sans-ads2.map (supported in stage-pickle-wsl.sh since c2203e0). Told NPT + TM; fix committed in protocols 8fe30d0 (${pid#~}); refiled one scenario 20261110-155558-271-f4f9, evidence Tests/Pickle/Inbox/02-sans-ads2-fix-8fe30d0; wait for RUN_DONE"
   - "2026-11-10 replay-audit: stays playTests, first open 8.c. Fixed in place: 6.f TRANSLATION_REVIEW.md replaces FRENCH_REVIEW.md, 4.g workshop_required_items n/a not released yet. Open: 8.c ticket 02 no report (NPT asked), 8.f, 8.g (S3 plus offline-only S2 S5 S6), 8.i log check without ADS2, 8.l sort Inbox plus docs/runs line plus tested_on, 8.m code_review_sha absent. Ledger .replays/PomeranianADogSaid2Renew-20261110.tsv"
-updated:      2026-11-10
+  - "2026-11-11 Virginie created the PRIVATE Workshop item 3837928560 at 17:00 with the in-game upload button and claus.changenotes (Publisher by Claus); Mod/About/PublishedFileId.txt committed d53396d (pushed). Claus rewrote About.xml (BOM, modVersion 0.1.0 glued before </ModMetaData>): restored without BOM, <modVersion>1.0.0</modVersion> placed after <url> (sibling mods convention), 1.0.0 = target in STATUS and [Unreleased] of CHANGELOG, never published. Not published, item not public; Steam page, tags and public flip are later gestures"
+updated:      2026-11-11
 protocols_read_sha: fcb203fdc4daee475b34b2eb43b37221762dc461
 ---
 
