@@ -39,7 +39,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -86,7 +85,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -128,6 +126,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I open the Operations list of the Health tab
+    And Nelim's Pickle Tools: I click button keyed "AddBill"
     When Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-2-the-offer"
@@ -146,7 +145,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -212,7 +210,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -257,7 +254,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
