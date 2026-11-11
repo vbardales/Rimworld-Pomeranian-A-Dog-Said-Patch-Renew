@@ -36,7 +36,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Sanctuary: the animals are removed from the sanctuary "infirmary-animals"
     And Nelim's Sanctuary: I am at the sanctuary "infirmary-animals"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
     And Nelim's Pickle Tools: the tooltips are hidden
@@ -80,7 +79,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Sanctuary: the animals are removed from the sanctuary "infirmary-animals"
     And Nelim's Sanctuary: I am at the sanctuary "infirmary-animals"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
     And Nelim's Pickle Tools: the tooltips are hidden
@@ -137,7 +135,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Sanctuary: the animals are removed from the sanctuary "infirmary-animals"
     And Nelim's Sanctuary: I am at the sanctuary "infirmary-animals"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
     And Nelim's Pickle Tools: the tooltips are hidden
@@ -197,7 +194,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Sanctuary: the animals are removed from the sanctuary "flower-garden"
     And Nelim's Sanctuary: I am at the sanctuary "flower-garden"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
     And Nelim's Pickle Tools: the tooltips are hidden
@@ -239,7 +235,6 @@ Feature: Pomeranian patch gallery
     And Nelim's Sanctuary: the animals are removed from the sanctuary "terrace"
     And Nelim's Sanctuary: I am at the sanctuary "terrace"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
-    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
     And Nelim's Pickle Tools: the tooltips are hidden
