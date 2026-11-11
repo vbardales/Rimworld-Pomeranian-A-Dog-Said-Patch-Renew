@@ -39,7 +39,9 @@ remaining:
   - "2026-11-11 Virginie created the PRIVATE Workshop item 3837928560 at 17:00 with the in-game upload button and claus.changenotes (Publisher by Claus); Mod/About/PublishedFileId.txt committed d53396d (pushed). Claus rewrote About.xml (BOM, modVersion 0.1.0 glued before </ModMetaData>): restored without BOM, <modVersion>1.0.0</modVersion> placed after <url> (sibling mods convention), 1.0.0 = target in STATUS and [Unreleased] of CHANGELOG, never published. Not published, item not public; Steam page, tags and public flip are later gestures"
   - "2026-11-11 ticket filed at 1ccdd75: 20261111-173141-115-8455 (02-sans-ads2 scenarios 2 and 3: clean log without ADS2, surgery absent; closes 8.i log check and S3), evidence Tests/Pickle/Inbox/02-sans-ads2-log-1ccdd75; wait for RUN_DONE. 8.f/8.g: S1, S4 (01 green), S3 (02), S2, S5, S6 offline Test-Xml 9/9 green at 1ccdd75; 8.i FR/EN not_applicable (no text); 8.m after the ticket"
   - "2026-11-11 ticket 02 (20261110-155558-271-f4f9) green 1/1 (A Dog Said 2 is absent, 842 ms), evidence Tests/Pickle/Inbox/02-sans-ads2-fix-8fe30d0 (summary.json read); 8.l done 2026-11-11 (Inbox sorted: run in Evidence with RELEASE.md, docs/runs/history.md line, tested_on set). Still open: 8.f, 8.g (S3 plus offline-only S2 S5 S6), 8.i log check without ADS2, 8.m code_review_sha absent"
+  - "2026-11-11 8.m code review (Opus sub-agent, Mod/ XML only, 0 to 325785e): no defect; notes: About.xml description mentions 1.0/1.1 of the original mod (lint clean, kept), Mod/desktop.ini gitignored not shipped by git. 8.f, 8.g, 8.i closed: ticket 20261111-173141-115-8455 2/2 green (clean log, surgery absent without ADS2), 01 3/3, Test-Xml 9/9, FR/EN not_applicable. code_review_sha set. Evidence minified, Inbox empty. playTests criteria met; stage move is for the TM or Virginie"
 updated:      2026-11-11
+code_review_sha: 325785e05fabd79db125c449e30e0576f5a442f7
 protocols_read_sha: 501118d582fdc4264a95124bbef2fae7badb0ed3
 ---
 
