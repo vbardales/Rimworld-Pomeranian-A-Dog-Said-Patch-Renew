@@ -59,8 +59,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 52)
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
-    And Nelim's Pickle Tools: the player animal "Biscuit" of kind "aka_Pomeranian" is spawned
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (213, 52)
+    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (213, 52)
     And Nelim's Pickle Tools: the animal "Biscuit" is missing its "rear left leg"
     And Nelim's Pickle Tools: the animal "Biscuit" lies on the bed at (213, 52)
     And Nelim's Pickle Tools: the colonist "Nelim" holds "MedicineIndustrial" in hand
@@ -114,8 +113,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 52)
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
-    And Nelim's Pickle Tools: the player animal "Biscuit" of kind "aka_Pomeranian" is spawned
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (213, 52)
+    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (213, 52)
     And Nelim's Pickle Tools: the animal "Biscuit" is missing its "rear left leg"
     And Nelim's Pickle Tools: the animal "Biscuit" lies on the bed at (213, 52)
     And Nelim's Pickle Tools: "Soren" stands at (214, 52) facing West
@@ -172,8 +170,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: I place the decor "Stool" near (211, 52)
-    And Nelim's Pickle Tools: the player animal "Biscuit" of kind "aka_Pomeranian" is spawned
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (213, 52)
+    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (213, 52)
     And Nelim's Pickle Tools: the animal "Biscuit" is missing its "rear left leg"
     And Nelim's Pickle Tools: the animal "Biscuit" lies on the bed at (213, 52)
     And Nelim's Pickle Tools: the animal "Biscuit" has the surgery bill "InstallPegLegAnimal" on its "rear left leg"
