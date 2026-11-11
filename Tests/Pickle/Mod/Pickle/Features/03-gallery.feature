@@ -22,7 +22,7 @@
 #                     PegLeg on its rear left leg, Nelim at (156, 110) facing south smiling, Shogun at (154, 112) facing west. Plant_Daylily at (153, 111), (157, 111),
 #                     (153, 109) and (157, 109) fully grown, PlantPot_Bonsai near (152, 110), DR_StickLantern at (152, 112). Health tab open, "peg leg".
 #                     Instant: Biscuit has just taken his first step on the peg leg. Long afternoon shadows.
-#   5. workshop-5-dusk-walk  terrace 18h (centre 196, 123) tight, closing, root size 2.5. Biscuit at (196, 123) facing south with PegLeg, Nelim at (197, 123),
+#   5. workshop-5-dusk-walk  statue-garden 18h (centre 155, 99; terrace is an indoor veranda) tight, closing, root size 2.5. Biscuit at (196, 123) facing south with PegLeg, Nelim at (197, 123),
 #                     smiling. DR_StickLantern at (193, 121) and (199, 121) lit, Brazier at (194, 125) lit, PlantPot with Plant_Daylily at (198, 125), Stool near (193, 124).
 #                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
 # Mods for the -DepMap: wsl-deps.gallery.map (NSB Nelim map plus Lisa's Work Apparel, LTS Raiments, Ponpeco, Stick Lantern, Animal Medical Bed, Pomeranian Continued, this patch, ADS2).
@@ -32,6 +32,7 @@ Feature: Pomeranian patch gallery
 
   Scenario: gallery-1-carried-in
     Given the save "Nelims-tribe" is loaded
+    And game speed is paused
     And I set the hour to 8
     And Nelim's Sanctuary: the animals are removed from the sanctuary "infirmary-animals"
     And Nelim's Sanctuary: I am at the sanctuary "infirmary-animals"
@@ -41,6 +42,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the tooltips are hidden
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
+    And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -65,16 +67,18 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the colonist "Nelim" holds "MedicineIndustrial" in hand
     And Nelim's Pickle Tools: "Nelim" stands at (211, 52) facing East
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 3.5
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
-    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 3.5
     When Nelim's Pickle Tools: I let 5 frames pass
+    And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-1-carried-in"
     And Nelim's Pickle Tools: the decor is removed
 
   Scenario: gallery-2-the-offer
     Given the save "Nelims-tribe" is loaded
+    And game speed is paused
     And I set the hour to 9
     And Nelim's Sanctuary: the animals are removed from the sanctuary "infirmary-animals"
     And Nelim's Sanctuary: I am at the sanctuary "infirmary-animals"
@@ -84,6 +88,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the tooltips are hidden
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
+    And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -120,17 +125,19 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Soren" mouth is "MouthSmile"
     And Nelim's Pickle Tools: "Nelim" stands at (211, 53) facing East
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.8
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I open the Operations list of the Health tab
-    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.8
     When Nelim's Pickle Tools: I let 5 frames pass
+    And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-2-the-offer"
     And Nelim's Pickle Tools: the decor is removed
 
   Scenario: gallery-3-surgery
     Given the save "Nelims-tribe" is loaded
+    And game speed is paused
     And I set the hour to 10
     And Nelim's Sanctuary: the animals are removed from the sanctuary "infirmary-animals"
     And Nelim's Sanctuary: I am at the sanctuary "infirmary-animals"
@@ -140,6 +147,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the tooltips are hidden
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
+    And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -176,22 +184,25 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the animal "Biscuit" lies on the bed at (213, 52)
     And Nelim's Pickle Tools: the animal "Biscuit" has the surgery bill "InstallPegLegAnimal" on its "rear left leg"
     And Nelim's Pickle Tools: "Nelim" stands at (211, 53) facing East
+    And Nelim's Pickle Tools: "Nelim" waits in place
     And Nelim's Pickle Tools: "Soren" mouth is "MouthNormal"
     And Nelim's Sanctuary: Nelim has her own face
     Given game speed is normal
     When Nelim's Pickle Tools: "Soren" operates on the animal "Biscuit"
     And I wait 120 ticks
     And game speed is paused
+    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.5
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
-    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.5
     And Nelim's Pickle Tools: I let 5 frames pass
+    And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-3-surgery"
     And Nelim's Pickle Tools: the decor is removed
 
   Scenario: gallery-4-first-steps
     Given the save "Nelims-tribe" is loaded
+    And game speed is paused
     And I set the hour to 15
     And Nelim's Sanctuary: the animals are removed from the sanctuary "flower-garden"
     And Nelim's Sanctuary: I am at the sanctuary "flower-garden"
@@ -201,6 +212,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the tooltips are hidden
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
+    And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -223,25 +235,28 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the animal "Shogun" faces west
     And Nelim's Pickle Tools: the animal "Shogun" stands at (154, 112)
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: I frame the area centred on (155, 110) at root size 2.8
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (155, 110)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
-    And Nelim's Pickle Tools: I frame the area centred on (155, 110) at root size 2.8
     When Nelim's Pickle Tools: I let 5 frames pass
+    And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-4-first-steps"
     And Nelim's Pickle Tools: the decor is removed
 
   Scenario: gallery-5-dusk-walk
     Given the save "Nelims-tribe" is loaded
+    And game speed is paused
     And I set the hour to 18
-    And Nelim's Sanctuary: the animals are removed from the sanctuary "terrace"
-    And Nelim's Sanctuary: I am at the sanctuary "terrace"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
+    And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
     And Nelim's Pickle Tools: the tooltips are hidden
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
+    And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -249,25 +264,26 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (193, 121)
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" at (199, 121)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (193, 121) is lit
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (199, 121) is lit
-    And Nelim's Pickle Tools: I place the decor "Brazier" at (194, 125)
-    And Nelim's Pickle Tools: the decor "Brazier" at (194, 125) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (198, 125)
-    And Nelim's Pickle Tools: I place the decor "Stool" near (193, 124)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (152, 97)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (158, 97)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (152, 97) is lit
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (158, 97) is lit
+    And Nelim's Pickle Tools: I place the decor "Brazier" exactly at (153, 101)
+    And Nelim's Pickle Tools: the decor "Brazier" at (153, 101) is lit
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" near (158, 101)
+    And Nelim's Pickle Tools: I place the decor "Stool" near (154, 102)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
-    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (196, 123)
+    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (155, 99)
     And Nelim's Pickle Tools: the animal "Biscuit" has the hediff "PegLeg" on its "rear left leg"
     And Nelim's Pickle Tools: the animal "Biscuit" faces south
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (196, 123)
-    And Nelim's Pickle Tools: "Nelim" stands at (197, 123) facing South
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (155, 99)
+    And Nelim's Pickle Tools: "Nelim" stands at (156, 99) facing South
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (196, 123)
+    And Nelim's Pickle Tools: I frame the area centred on (155, 99) at root size 2.5
+    And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (155, 99)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
-    And Nelim's Pickle Tools: I frame the area centred on (196, 123) at root size 2.5
     When Nelim's Pickle Tools: I let 5 frames pass
+    And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-5-dusk-walk"
     And Nelim's Pickle Tools: the decor is removed
