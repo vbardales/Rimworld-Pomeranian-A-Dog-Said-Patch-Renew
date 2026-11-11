@@ -266,27 +266,28 @@ to anyone, not a name, not an idea traceable to one mod, not a value derived fro
 
 ## NSB
 
-Sync 2026-11-11 (first, at shootGallery, before write-shotlist). NSB holds no pomeranian and no ADS2 content; nothing the mod used earlier moved (no gallery existed). Rules said back: NSB places, colonists and domestic animals are free; outfits are free; the mod's own animal (aka_Pomeranian, patched by this mod) is authorized by default, no validation; no colonist property is changed; every included animal must appear in a shot (rule 5).
+Sync 2026-11-11, second pass (same day). Since the first pass: no commit in NSB `docs/` and none in NPT `docs/steps.md` or `ColonistRace/docs/catalogues` after 2026-11-11, so nothing moved; this pass read what the first one skipped (VALIDE.md, AVANCEMENT.md, Nelim and Soren profiles) and corrected one line. Correction: `infirmary-animals` is VALIDATED (VALIDE.md and SANCTUAIRE-LIEUX table, 2026-11-07, NPT lot 2b); `SANCTUAIRE-LIEUX.md` section 8 still says "refused 2026-11-06", a stale line of NSB, not touched (NSB's file). NSB holds no pomeranian and no ADS2 content. Rules said back: NSB places, colonists and domestic animals free; outfits free; the mod's own animal (aka_Pomeranian, patched by this mod) authorized by default, no validation (2026-11-07 exception); no colonist property changed (rule 3); every included animal appears in a shot (rule 5).
 
-Places read: 2026-11-11 (SANCTUAIRE-LIEUX sections 1, 11, infirmary block; sections 3 to 7 not reread) Tribe read: 2026-11-11 (CATALOGUE-ANIMAUX, section 11 "Qui une galerie peut utiliser"; roster, profiles and looks not opened yet) Steps read: 2026-11-11 (PickleTools docs/steps.md animal, hediff, camera rows only)
+Places read: 2026-11-11 (SANCTUAIRE-LIEUX sections 1, 3 row, 8 infirmary, 11; VALIDE.md rows) Tribe read: 2026-11-11 (CATALOGUE-ANIMAUX, section 11, AVANCEMENT, SOREN-PROFIL head, NELIM-PROFIL head; roster xlsx, looks catalogues not opened) Steps read: 2026-11-11 (PickleTools docs/steps.md animal, hediff, camera rows; no change since)
 
 Provisional, to confirm by write-shotlist (no shot exists yet):
 
 | Place | Shots | Changes for the gallery | Last read |
 | --- | --- | --- | --- |
-| Infirmerie des colons (`infirmary-pawns`, validated 2026-11-05; surgery on a hospital bed, no operating table in the base game) | to decide | none | 2026-11-11 |
-| Infirmerie des animaux (`infirmary-animals`, refused 2026-11-06, in decoration) | not used | n/a | 2026-11-11 |
+| Infirmerie des animaux (`infirmary-animals`, validated 2026-11-07, cell (213, 52) radius 6, vet beds, plants, rug) | to decide: the surgery shot | none | 2026-11-11 |
+| Infirmerie des colons (`infirmary-pawns`, validated 2026-11-05) | fallback only | none | 2026-11-11 |
 
 | Colonist | Shots | Outfit | Last read of profile | Exceptions |
 | --- | --- | --- | --- | --- |
-| Nelim (only colonist in the save, free) or an NSB colonist created by the scenario | to decide | to decide | not opened | none |
+| Soren (kind `Colonist`, "soigneur", created by the scenario; look validated apart from "à WDI près"; medic image to redo after VTW) | to decide: the vet beside the pomeranian | to decide in the shotlist (medic or daily, garment free by rule 4) | 2026-11-11 (head) | none, no property changed |
+| Nelim (only colonist in the save; her healer outfit was withdrawn 2026-11-05, now "informaticienne") | not planned | n/a | 2026-11-11 (head) | none |
 
 | Animal | Shots | Outfit | Last read of sheet | Exceptions |
 | --- | --- | --- | --- | --- |
-| aka_Pomeranian (Pomeranian Continued, patched by this mod; not in NSB) | to decide | none | n/a (not in NSB) | outside NSB, authorized by default as the mod's own animal (rule 2, 2026-11-07 exception); no validation needed |
+| aka_Pomeranian (Pomeranian Continued, patched by this mod; not in NSB) | to decide | none (no Animal Apparel check done yet) | n/a (not in NSB) | outside NSB, authorized by default as the mod's own animal (rule 2, 2026-11-07 exception); no validation needed |
 
 | Included animal (rule 5) | Shot(s) | Status |
 | --- | --- | --- |
 | aka_Pomeranian | none yet | MISSING until write-shotlist adds it (first shot) |
 
-Open for write-shotlist: NPT steps exist to spawn a player animal, give a hediff on no body part and frame the camera; a peg leg or bionic leg installed on a Leg (the story of the patch) has no step found: ask NPT before the shotlist counts on it. DepMap: `wsl-deps.avec-ads2.map` plus the NSB decor mods map, to merge with NPT.
+Open for write-shotlist: NPT steps exist to spawn a player animal, give a hediff on no body part and frame the camera; no step found to install a peg leg or bionic leg on a Leg (the story of the patch): ask NPT before the shotlist counts on it. DepMap: `wsl-deps.avec-ads2.map` plus the NSB decor mods map, to merge with NPT.
