@@ -43,6 +43,7 @@ remaining:
   - "2026-11-11 playTests left (8.a to 8.m met, 8.n): stage shootGallery[1.0.0]. Next: mod-workflow:sync-nsb-npt then write-shotlist, then 1.7 diagnostic pass (tested_1_7 still unset)"
   - "2026-11-11 gallery: shotlist final (score 5 per scene), scenarios written in Tests/Pickle/Mod/Pickle/Features/03-gallery.feature (5 scenarios, header = shotlist), map Tests/Pickle/wsl-deps.gallery.map, Check-Steps all steps resolve, Check-ShotlistVsScenario OK; NPT steps (leg hediff, bed, Operations list, bill and operates) committed by NPT, not played; subtitles in PUBLICATION.md not written yet"
   - "2026-11-11 gallery ticket filed at dfebe3b: 20261111-183146-061-c4b8 (03-gallery, 5 scenes, DepMap wsl-deps.gallery.map), evidence Tests/Pickle/Inbox/gallery-dfebe3b; wait for RUN_DONE; keep Mod/ and the feature frozen until then; first run expected to need cell and step fixes (NPT steps not played)"
+  - "2026-11-11 gallery run, 5 scenarios green (shots 1-3 at 42c45d6 ticket 7533, 4-5 at ac75, NPT steps 53fe974 and 2a0fb42 played), captures opened and judged: REDO x5, no colonist in frame, no inspect pane (studio mode removed because it hides the pane), HUD on, no missing leg or peg leg drawn, hour drifts +1h, shot 5 place shows an indoor piano hall. Evidence kept Tests/Pickle/Inbox/gallery-123-42c45d6 and gallery-45-c7511c6; NPT asked for each point; no capture in Art/Gallery-clean yet, subtitles not written"
 updated:      2026-11-11
 code_review_sha: 325785e05fabd79db125c449e30e0576f5a442f7
 protocols_read_sha: 1fca77a5c8a1990b5542aac2717a1e96dc822e1d
