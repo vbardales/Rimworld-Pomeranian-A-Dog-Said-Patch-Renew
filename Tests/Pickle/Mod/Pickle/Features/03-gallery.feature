@@ -22,9 +22,7 @@
 #                     PegLeg on its rear left leg, Nelim at (156, 110) facing south smiling, Shogun at (154, 112) facing west. Plant_Daylily at (153, 111), (157, 111),
 #                     (153, 109) and (157, 109) fully grown, PlantPot_Bonsai near (152, 110), DR_StickLantern at (152, 112). Health tab open, "peg leg".
 #                     Instant: Biscuit has just taken his first step on the peg leg. Long afternoon shadows.
-#   5. workshop-5-dusk-walk  statue-garden 18h (centre 155, 99; the terrace is an indoor veranda) tight, closing, root size 2.5. Biscuit at (155, 99) facing south with PegLeg, Nelim at (156, 99),#                     smiling. DR_StickLantern at (152, 97) and (158, 97) lit, Brazier at (153, 101) lit, PlantPot_Bonsai near (158, 101), Stool near (154, 102).#                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
-# Mods for the -DepMap: wsl-deps.gallery.map (NSB Nelim map plus Lisa's Work Apparel, LTS Raiments, Ponpeco, Stick Lantern, Animal Medical Bed, Pomeranian Continued, this patch, ADS2).
-# Cells: place centres of SanctuarySteps.cs; a bad cell fails the first run and is fixed then. Steps added by NPT 2026-11-11, compiled, not played: leg hediff, lies on the bed, Operations list, surgery bill and operates.
+#   5. workshop-5-dusk-walk  calm-zone 18h (centre 200, 187, free cream square; statue-garden and the terrace were refused: statues, indoor veranda) tight, closing, root size 2.5, frame centred on (198, 187). Biscuit at (200, 187) facing south with PegLeg, Nelim at (201, 187),#                     smiling. DR_StickLantern at (197, 185) and (203, 185) lit, Brazier at (198, 189) lit, PlantPot_Bonsai near (203, 189), Stool near (199, 190).#                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
 @review @timeout:900 @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.clearscreen @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.clickdiagnostics @requires:nelim.pickletools.coatsteps @requires:akairo.Pomeranian @requires:SamBucher.ADogSaidAnimalProsthetics2
 Feature: Pomeranian patch gallery
 
@@ -41,6 +39,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
+    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -65,7 +64,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the colonist "Nelim" holds "MedicineIndustrial" in hand
     And Nelim's Pickle Tools: "Nelim" stands at (211, 52) facing East
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 3.5
+    And Nelim's Pickle Tools: I frame the area centred on (211, 52) at root size 3.5
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
@@ -87,6 +86,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
+    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -123,7 +123,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Soren" mouth is "MouthSmile"
     And Nelim's Pickle Tools: "Nelim" stands at (211, 53) facing East
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.8
+    And Nelim's Pickle Tools: I frame the area centred on (211, 52) at root size 2.8
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
@@ -146,6 +146,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
+    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -189,7 +190,7 @@ Feature: Pomeranian patch gallery
     When Nelim's Pickle Tools: "Soren" operates on the animal "Biscuit"
     And I wait 120 ticks
     And game speed is paused
-    And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.5
+    And Nelim's Pickle Tools: I frame the area centred on (211, 52) at root size 2.5
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
@@ -211,6 +212,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
+    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -233,7 +235,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the animal "Shogun" faces west
     And Nelim's Pickle Tools: the animal "Shogun" stands at (154, 112)
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: I frame the area centred on (155, 110) at root size 2.8
+    And Nelim's Pickle Tools: I frame the area centred on (153, 110) at root size 2.8
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (155, 110)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
@@ -246,8 +248,8 @@ Feature: Pomeranian patch gallery
     Given the save "Nelims-tribe" is loaded
     And game speed is paused
     And I set the hour to 18
-    And Nelim's Sanctuary: the animals are removed from the sanctuary "statue-garden"
-    And Nelim's Sanctuary: I am at the sanctuary "statue-garden"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "calm-zone"
+    And Nelim's Sanctuary: I am at the sanctuary "calm-zone"
     And Nelim's Pickle Tools: the temperature of the map is 20 degrees
     And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Pickle Tools: the learning helper is hidden
@@ -255,6 +257,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the alerts are hidden
     And Nelim's Pickle Tools: the main bar, the speed controls and the mouse-over readout are hidden
+    And Nelim's Pickle Tools: developer mode is turned off for the capture
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: the colonist "Nelim" follows an apparel policy that allows everything
@@ -262,23 +265,23 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" wears "LTS_Tunika" made of "Cloth"
     And Nelim's Pickle Tools: the "LTS_Tunika" worn by "Nelim" is dyed rgb (31, 122, 92)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_PAESmallEarrings" made of "Gold"
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (152, 97)
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (158, 97)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (152, 97) is lit
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (158, 97) is lit
-    And Nelim's Pickle Tools: I place the decor "Brazier" exactly at (153, 101)
-    And Nelim's Pickle Tools: the decor "Brazier" at (153, 101) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" near (158, 101)
-    And Nelim's Pickle Tools: I place the decor "Stool" near (154, 102)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (197, 185)
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (203, 185)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (197, 185) is lit
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (203, 185) is lit
+    And Nelim's Pickle Tools: I place the decor "Brazier" exactly at (198, 189)
+    And Nelim's Pickle Tools: the decor "Brazier" at (198, 189) is lit
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" near (203, 189)
+    And Nelim's Pickle Tools: I place the decor "Stool" near (199, 190)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
-    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (155, 99)
+    And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (200, 187)
     And Nelim's Pickle Tools: the animal "Biscuit" has the hediff "PegLeg" on its "rear left leg"
     And Nelim's Pickle Tools: the animal "Biscuit" faces south
-    And Nelim's Pickle Tools: the animal "Biscuit" stands at (155, 99)
-    And Nelim's Pickle Tools: "Nelim" stands at (156, 99) facing South
+    And Nelim's Pickle Tools: the animal "Biscuit" stands at (200, 187)
+    And Nelim's Pickle Tools: "Nelim" stands at (201, 187) facing South
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: I frame the area centred on (155, 99) at root size 2.5
-    And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (155, 99)
+    And Nelim's Pickle Tools: I frame the area centred on (198, 187) at root size 2.5
+    And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (200, 187)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     When Nelim's Pickle Tools: I let 5 frames pass
