@@ -10,7 +10,7 @@
 #
 # SHOTS (index, place, hour, type)
 #   1. workshop-1-carried-in  infirmary-animals 8h (centre 213, 52) wide, opening, root size 3.5. AnimalBed at (213, 52), TorchLamp at (209, 50), (217, 50)
-#                     and (213, 55) lit, PlantPot with Plant_Daylily at (209, 52) and (217, 52) (the room beds hold (209, 54)), Shelf near (216, 49). Biscuit (aka_Pomeranian, missing its rear left leg)
+#                     and (213, 55) lit, PlantPot with Plant_Daylily at (209, 52) and (217, 52), Shelf near (216, 49). Biscuit (aka_Pomeranian, missing its rear left leg)
 #                     lies on the bed at (213, 52); Nelim holds MedicineIndustrial and stops at (211, 52) facing east, smiling; Health tab open, "missing hind leg".
 #                     Instant: she has just come in, she is about to kneel. Foreground Nelim, background torches and plants, soft morning light.
 #   2. workshop-2-the-offer  infirmary-animals 9h (centre 213, 52) medium-tight, root size 2.8. Same decor. Soren stands at (214, 52) facing west, MouthSmile;
@@ -22,9 +22,7 @@
 #                     PegLeg on its rear left leg, Nelim at (156, 110) facing south smiling, Shogun at (154, 112) facing west. Plant_Daylily at (153, 111), (157, 111),
 #                     (153, 109) and (157, 109) fully grown, PlantPot_Bonsai near (152, 110), DR_StickLantern at (152, 112). Health tab open, "peg leg".
 #                     Instant: Biscuit has just taken his first step on the peg leg. Long afternoon shadows.
-#   5. workshop-5-dusk-walk  statue-garden 18h (centre 155, 99; terrace is an indoor veranda) tight, closing, root size 2.5. Biscuit at (196, 123) facing south with PegLeg, Nelim at (197, 123),
-#                     smiling. DR_StickLantern at (193, 121) and (199, 121) lit, Brazier at (194, 125) lit, PlantPot with Plant_Daylily at (198, 125), Stool near (193, 124).
-#                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
+#   5. workshop-5-dusk-walk  statue-garden 18h (centre 155, 99; the terrace is an indoor veranda) tight, closing, root size 2.5. Biscuit at (155, 99) facing south with PegLeg, Nelim at (156, 99),#                     smiling. DR_StickLantern at (152, 97) and (158, 97) lit, Brazier at (153, 101) lit, PlantPot_Bonsai near (158, 101), Stool near (154, 102).#                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
 # Mods for the -DepMap: wsl-deps.gallery.map (NSB Nelim map plus Lisa's Work Apparel, LTS Raiments, Ponpeco, Stick Lantern, Animal Medical Bed, Pomeranian Continued, this patch, ADS2).
 # Cells: place centres of SanctuarySteps.cs; a bad cell fails the first run and is fixed then. Steps added by NPT 2026-11-11, compiled, not played: leg hediff, lies on the bed, Operations list, surgery bill and operates.
 @review @timeout:900 @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.clearscreen @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.clickdiagnostics @requires:nelim.pickletools.coatsteps @requires:akairo.Pomeranian @requires:SamBucher.ADogSaidAnimalProsthetics2
