@@ -10,7 +10,7 @@
 #
 # SHOTS (index, place, hour, type)
 #   1. workshop-1-carried-in  infirmary-animals 8h (centre 213, 52) wide, opening, root size 3.5. SUN_MedicalAnimalBed at (213, 52), TorchLamp at (209, 50), (217, 50)
-#                     and (213, 55) lit, PlantPot with Plant_Daylily at (209, 54) and (217, 54), Shelf near (216, 49). Biscuit (aka_Pomeranian, missing its rear left leg)
+#                     and (213, 55) lit, PlantPot with Plant_Daylily at (209, 52) and (217, 52) (the room beds hold (209, 54)), Shelf near (216, 49). Biscuit (aka_Pomeranian, missing its rear left leg)
 #                     lies on the bed at (213, 52); Nelim holds MedicineIndustrial and stops at (211, 52) facing east, smiling; Health tab open, "missing hind leg".
 #                     Instant: she has just come in, she is about to kneel. Foreground Nelim, background torches and plants, soft morning light.
 #   2. workshop-2-the-offer  infirmary-animals 9h (centre 213, 52) medium-tight, root size 2.8. Same decor. Soren stands at (214, 52) facing west, MouthSmile;
@@ -56,8 +56,8 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the decor "TorchLamp" at (209, 50) is lit
     And Nelim's Pickle Tools: the decor "TorchLamp" at (217, 50) is lit
     And Nelim's Pickle Tools: the decor "TorchLamp" at (213, 55) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (209, 54)
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 54)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (209, 52)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 52)
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (213, 52)
@@ -67,6 +67,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" stands at (211, 52) facing East
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
+    And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 3.5
     When Nelim's Pickle Tools: I let 5 frames pass
@@ -110,8 +111,8 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the decor "TorchLamp" at (209, 50) is lit
     And Nelim's Pickle Tools: the decor "TorchLamp" at (217, 50) is lit
     And Nelim's Pickle Tools: the decor "TorchLamp" at (213, 55) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (209, 54)
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 54)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (209, 52)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 52)
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (213, 52)
@@ -122,6 +123,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" stands at (211, 53) facing East
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
+    And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I open the Operations list of the Health tab
     And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.8
@@ -166,8 +168,8 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the decor "TorchLamp" at (209, 50) is lit
     And Nelim's Pickle Tools: the decor "TorchLamp" at (217, 50) is lit
     And Nelim's Pickle Tools: the decor "TorchLamp" at (213, 55) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (209, 54)
-    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 54)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (209, 52)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" holding "Plant_Daylily" fully grown at (217, 52)
     And Nelim's Pickle Tools: I place the decor "Shelf" near (216, 49)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: I place the decor "Stool" near (211, 52)
@@ -182,6 +184,7 @@ Feature: Pomeranian patch gallery
     When Nelim's Pickle Tools: "Soren" operates on the animal "Biscuit"
     And game speed is paused
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
+    And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I frame the area centred on (213, 52) at root size 2.5
     And Nelim's Pickle Tools: I let 5 frames pass
@@ -223,6 +226,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the animal "Shogun" stands at (154, 112)
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (155, 110)
+    And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I frame the area centred on (155, 110) at root size 2.8
     When Nelim's Pickle Tools: I let 5 frames pass
@@ -264,6 +268,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" stands at (197, 123) facing South
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (196, 123)
+    And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I frame the area centred on (196, 123) at root size 2.5
     When Nelim's Pickle Tools: I let 5 frames pass
