@@ -22,7 +22,7 @@
 #                     PegLeg on its rear left leg, Nelim at (156, 110) facing south smiling, Shogun at (154, 112) facing west. Plant_Daylily at (153, 111), (157, 111),
 #                     (153, 109) and (157, 109) fully grown, PlantPot_Bonsai near (152, 110), DR_StickLantern at (152, 112). Health tab open, "peg leg".
 #                     Instant: Biscuit has just taken his first step on the peg leg. Long afternoon shadows.
-#   5. workshop-5-dusk-walk  calm-zone 18h (centre 200, 187, free cream square; statue-garden and the terrace were refused: statues, indoor veranda) tight, closing, root size 2.5, frame centred on (198, 187). Biscuit at (200, 187) facing south with PegLeg, Nelim at (201, 187),#                     smiling. DR_StickLantern at (197, 185) and (203, 185) lit, Brazier at (198, 189) lit, PlantPot_Bonsai near (203, 189), Stool near (199, 190).#                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
+#   5. workshop-5-dusk-walk  calm-zone 18h (centre 200, 187, free cream square; statue-garden and the terrace were refused: statues, indoor veranda) tight, closing, root size 2.5, frame centred on (199, 187). Biscuit at (200, 187) facing south with PegLeg, Nelim at (201, 187),#                     smiling. DR_StickLantern at (197, 185) and (203, 185) lit, Brazier at (198, 189) lit, PlantPot_Bonsai near (203, 189), Stool near (199, 190).#                     Health tab open, "peg leg". Instant: they are about to leave for supper. Lantern and brazier light at dusk.
 @review @timeout:900 @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.stagedecor @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.clearscreen @requires:nelim.pickletools.inspecttabs @requires:nelim.pickletools.clickdiagnostics @requires:nelim.pickletools.coatsteps @requires:akairo.Pomeranian @requires:SamBucher.ADogSaidAnimalProsthetics2
 Feature: Pomeranian patch gallery
 
@@ -184,6 +184,8 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: "Nelim" waits in place
     And Nelim's Pickle Tools: "Soren" mouth is "MouthNormal"
     And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: the colonist "Soren" holds "WoodLog" in hand
+    And Nelim's Pickle Tools: "Soren" stands at (212, 53) facing East
     Given game speed is normal
     When Nelim's Pickle Tools: "Soren" operates on the animal "Biscuit"
     And I wait 120 ticks
@@ -269,6 +271,11 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the decor "Brazier" at (198, 189) is lit
     And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" near (203, 189)
     And Nelim's Pickle Tools: I place the decor "Stool" near (199, 190)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 185) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (202, 185) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (199, 189) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (202, 189) fully grown
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Bonsai" near (196, 187)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: an adult animal of kind "aka_Pomeranian" named "Biscuit" is spawned at (200, 187)
     And Nelim's Pickle Tools: the animal "Biscuit" has the hediff "PegLeg" on its "rear left leg"
@@ -276,7 +283,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: the animal "Biscuit" stands at (200, 187)
     And Nelim's Pickle Tools: "Nelim" stands at (201, 187) facing South
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: I frame the area centred on (198, 187) at root size 2.5
+    And Nelim's Pickle Tools: I frame the area centred on (199, 187) at root size 2.5
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (200, 187)
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
