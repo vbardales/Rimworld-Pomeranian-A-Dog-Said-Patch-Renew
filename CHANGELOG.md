@@ -4,7 +4,7 @@ All notable changes to this mod are documented here.
 
 ## [Unreleased]
 
-First release (1.0.0, not yet published). Rewrite of akairo's **Pomeranian - A Dog Said Patch** for the
+First release (1.0.0, private and never made public). Rewrite of akairo's **Pomeranian - A Dog Said Patch** for the
 latest RimWorld version.
 
 ### Fixed

@@ -1,6 +1,6 @@
 # Pomeranian - A Dog Said Patch Renew (unofficial): publication
 
-Draft. Only the gallery plan and the subtitle lines exist so far; the Steam description and the checklist come at `writeDocs`. Nothing below has been played or captured yet.
+Draft. Only the gallery plan and the subtitle lines exist so far; the Steam description and the checklist come at `writeDocs`. The gallery scenarios have been played and the captures opened; all five are judged REDO and are being recomposed, so no gallery image is final yet.
 
 ## Gallery plan (draft, 2026-10-16)
 
