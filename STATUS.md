@@ -9,7 +9,7 @@ repo:         Rimworld-Pomeranian-A-Dog-Said-Patch-Renew
 remote:       https://github.com/vbardales/Rimworld-Pomeranian-A-Dog-Said-Patch-Renew.git
 visibility:   public
 detached:     no
-workflow_stage: playTests[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 licence:      silent
 licence_at:   "2026-10-15: no licence and no reuse permission on the original patch page (2020237999, akairo, 2020, never updated) nor on Pomeranian Continued (3682979759, Bernau31); author offline, no stated position"
 upstream_mod_remotes: N/A      # akairo's original (Workshop 2020237999) has no linked git repository
@@ -40,9 +40,10 @@ remaining:
   - "2026-11-11 ticket filed at 1ccdd75: 20261111-173141-115-8455 (02-sans-ads2 scenarios 2 and 3: clean log without ADS2, surgery absent; closes 8.i log check and S3), evidence Tests/Pickle/Inbox/02-sans-ads2-log-1ccdd75; wait for RUN_DONE. 8.f/8.g: S1, S4 (01 green), S3 (02), S2, S5, S6 offline Test-Xml 9/9 green at 1ccdd75; 8.i FR/EN not_applicable (no text); 8.m after the ticket"
   - "2026-11-11 ticket 02 (20261110-155558-271-f4f9) green 1/1 (A Dog Said 2 is absent, 842 ms), evidence Tests/Pickle/Inbox/02-sans-ads2-fix-8fe30d0 (summary.json read); 8.l done 2026-11-11 (Inbox sorted: run in Evidence with RELEASE.md, docs/runs/history.md line, tested_on set). Still open: 8.f, 8.g (S3 plus offline-only S2 S5 S6), 8.i log check without ADS2, 8.m code_review_sha absent"
   - "2026-11-11 8.m code review (Opus sub-agent, Mod/ XML only, 0 to 325785e): no defect; notes: About.xml description mentions 1.0/1.1 of the original mod (lint clean, kept), Mod/desktop.ini gitignored not shipped by git. 8.f, 8.g, 8.i closed: ticket 20261111-173141-115-8455 2/2 green (clean log, surgery absent without ADS2), 01 3/3, Test-Xml 9/9, FR/EN not_applicable. code_review_sha set. Evidence minified, Inbox empty. playTests criteria met; stage move is for the TM or Virginie"
+  - "2026-11-11 playTests left (8.a to 8.m met, 8.n): stage shootGallery[1.0.0]. Next: mod-workflow:sync-nsb-npt then write-shotlist, then 1.7 diagnostic pass (tested_1_7 still unset)"
 updated:      2026-11-11
 code_review_sha: 325785e05fabd79db125c449e30e0576f5a442f7
-protocols_read_sha: 501118d582fdc4264a95124bbef2fae7badb0ed3
+protocols_read_sha: d3e206e35f32d4b917732ea20dd7d1fb63504d7d
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
