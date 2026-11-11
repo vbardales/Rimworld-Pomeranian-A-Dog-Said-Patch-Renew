@@ -4,3 +4,4 @@
 2026-11-03 f2c357d ticket 20261102-193459-147-2b92 feature 02-sans-ads2: no report, staging error on the ~ line of the map. Deleted.
 2026-11-10 3453d53 ticket 20261110-153453-358-8e5e feature 02-sans-ads2 one scenario: no report, same staging error ($HOME expansion of ~ in stage-pickle-wsl.sh, fix pending commit by the protocols owner). Deleted.
 2026-11-11 8fe30d0 ticket 20261110-155558-271-f4f9 feature 02-sans-ads2 one scenario: 1/1 passed, exitReason passed (A Dog Said 2 absent, 842 ms, no error). Kept minified in Tests/Pickle/Evidence/02-sans-ads2-fix-8fe30d0.
+2026-11-11 1ccdd75 ticket 20261111-173141-115-8455 feature 02-sans-ads2 scenarios 2 and 3: 2/2 passed, exitReason passed (clean colony load without ADS2, surgery not offered). Kept minified in Tests/Pickle/Evidence/02-sans-ads2-log-1ccdd75.
