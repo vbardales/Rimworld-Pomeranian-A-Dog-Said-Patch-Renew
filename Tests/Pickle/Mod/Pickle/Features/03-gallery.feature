@@ -126,7 +126,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: I open the "Health" inspect tab
     And Nelim's Pickle Tools: I open the Operations list of the Health tab
-    And Nelim's Pickle Tools: I click button keyed "AddBill"
+    And I click button keyed "AddBill"
     When Nelim's Pickle Tools: I let 5 frames pass
     And Nelim's Pickle Tools: the "Health" inspect tab is open
     Then I take a screenshot "pomeranian-2-the-offer"
