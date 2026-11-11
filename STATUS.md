@@ -38,7 +38,7 @@ remaining:
   - "2026-11-10 replay-audit: stays playTests, first open 8.c. Fixed in place: 6.f TRANSLATION_REVIEW.md replaces FRENCH_REVIEW.md, 4.g workshop_required_items n/a not released yet. Open: 8.c ticket 02 no report (NPT asked), 8.f, 8.g (S3 plus offline-only S2 S5 S6), 8.i log check without ADS2, 8.l sort Inbox plus docs/runs line plus tested_on, 8.m code_review_sha absent. Ledger .replays/PomeranianADogSaid2Renew-20261110.tsv"
   - "2026-11-11 Virginie created the PRIVATE Workshop item 3837928560 at 17:00 with the in-game upload button and claus.changenotes (Publisher by Claus); Mod/About/PublishedFileId.txt committed d53396d (pushed). Claus rewrote About.xml (BOM, modVersion 0.1.0 glued before </ModMetaData>): restored without BOM, <modVersion>1.0.0</modVersion> placed after <url> (sibling mods convention), 1.0.0 = target in STATUS and [Unreleased] of CHANGELOG, never published. Not published, item not public; Steam page, tags and public flip are later gestures"
 updated:      2026-11-11
-protocols_read_sha: fcb203fdc4daee475b34b2eb43b37221762dc461
+protocols_read_sha: 0c14758b07f449679e48606eb3af087d05cfe8f9
 ---
 
 # Pomeranian - A Dog Said Patch Renew (unofficial), status
