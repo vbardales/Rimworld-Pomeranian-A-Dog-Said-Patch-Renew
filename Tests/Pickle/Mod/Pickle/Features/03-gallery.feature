@@ -180,6 +180,7 @@ Feature: Pomeranian patch gallery
     And Nelim's Sanctuary: Nelim has her own face
     Given game speed is normal
     When Nelim's Pickle Tools: "Soren" operates on the animal "Biscuit"
+    And I let 120 ticks pass
     And game speed is paused
     And Nelim's Pickle Tools: I select the thing of def "aka_Pomeranian" at (213, 52)
     And Nelim's Pickle Tools: I let 5 frames pass
